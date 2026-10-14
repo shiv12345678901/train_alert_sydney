@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f8fb">
+<meta name="description" content="BN109 Web and Multimedia Systems exam revision: 50 clear answers and 10 high-priority five-mark practice answers, based on course lectures and the sample examination.">
+<title>BN109 Exam Companion · 50 Questions + Top 10</title>
+<style>
+:root {color-scheme:light;--bg:#f7f8fa;--paper:#fff;--text:#192533;--muted:#63758b;--line:#e3e9f0;--blue:#245ac8;--sky:#edf3fe;--teal:#087f72;--shadow:0 6px 30px rgba(27,44,65,.04);--radius:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.62;font-size:15px}button,input{font:inherit}button{cursor:pointer}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}:focus-visible{outline:3px solid #73a6fd;outline-offset:3px}
+.app{display:grid;grid-template-columns:292px minmax(0,1fr);min-height:100vh;max-width:1600px;margin:0 auto}.sidebar{position:sticky;top:0;height:100vh;background:#fff;border-right:1px solid var(--line);display:flex;flex-direction:column;min-width:0;z-index:22}.sidebar-brand{padding:25px 24px 18px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;color:var(--text);text-decoration:none}.brand:hover{text-decoration:none}.logo{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:#193d86;color:#fff;font-size:15px;font-weight:800;letter-spacing:-.05em}.brand-text{font-weight:780;font-size:17px;letter-spacing:-.035em}.brand-sub{color:var(--muted);font-size:11px;margin-top:-2px}.nav-label{font-size:10px;font-weight:800;color:#788698;letter-spacing:.15em;margin:20px 22px 11px;text-transform:uppercase}.side-summary{display:flex;justify-content:space-between;margin:0 18px 11px;padding:12px 12px;border-radius:10px;background:#f3f6fb;color:#35475b;font-size:12px;font-weight:700}.side-summary strong{color:var(--blue)}.side-scroll{overflow-y:auto;padding:0 11px 22px;scrollbar-width:thin;flex:1}.nav-q{display:flex;gap:10px;align-items:flex-start;color:#44576a;border-radius:9px;padding:10px 11px;font-size:12.5px;line-height:1.4;transition:background .12s}.nav-q>span:first-child{flex:0 0 31px;color:#7a8ba0;font-weight:780;font-size:11px}.nav-q>span:last-child{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.nav-q:hover{background:#f0f5ff;text-decoration:none;color:#1e4faf}.nav-q.active{background:#eaf1ff;color:#1d4db3;font-weight:650}.sidebar-footer{padding:15px 21px;border-top:1px solid var(--line);font-size:11px;color:#8190a1}
+.workspace{min-width:0}.toolbar{position:sticky;top:0;z-index:15;display:flex;align-items:center;gap:12px;justify-content:space-between;border-bottom:1px solid rgba(218,226,237,.92);padding:15px clamp(20px,3vw,45px);background:rgba(247,248,250,.95);backdrop-filter:blur(18px)}.search-wrap{display:flex;align-items:center;gap:9px;max-width:430px;width:100%;border:1px solid #dce4ef;background:#fff;border-radius:11px;padding:0 13px;color:#8393a5}.search-wrap input{width:100%;border:0;outline:none;background:transparent;padding:11px 0;color:var(--text);font-size:13px}.search-wrap:focus-within{border-color:#82a8f2;box-shadow:0 0 0 3px rgba(36,90,200,.08)}.tool-right{display:flex;gap:8px;align-items:center;flex-shrink:0}.btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;border:1px solid var(--line);background:white;color:#32475c;font-weight:680;font-size:12px;padding:10px 13px;white-space:nowrap}.btn:hover{background:#f2f6fc}.btn-primary{background:#1d4b9d;border-color:#1d4b9d;color:white}.btn-primary:hover{background:#143c82}.mobile-menu{display:none}.icon{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.content{max-width:1030px;margin:0 auto;padding:37px clamp(20px,4vw,65px) 105px}.hero-eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#416995;font-weight:800;margin:0 0 13px}.hero h1{font-size:clamp(31px,4vw,47px);letter-spacing:-.055em;line-height:1.13;font-weight:780;margin:0;max-width:680px}.hero h1 em{font-style:normal;color:#2359be}.hero-desc{font-size:14px;color:#65778c;max-width:720px;margin:17px 0 24px;line-height:1.78}.stats{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}.stat{border:1px solid var(--line);border-radius:10px;padding:8px 13px;background:#fff;font-size:11.5px;color:#5a6d82}.stat b{color:#22374f}.tabs{display:flex;align-items:center;gap:5px;padding:5px;background:#eaf0f6;border-radius:12px;width:max-content;max-width:100%;margin:27px 0 20px}.tab{border:0;background:transparent;color:#62758b;padding:10px 17px;border-radius:9px;font-weight:760;font-size:12.5px}.tab.active{background:#fff;color:#1f4f9f;box-shadow:0 1px 5px rgba(27,51,90,.1)}.highlight-note{padding:17px 18px;background:#fff;border:1px solid #dce5f4;border-left:3px solid var(--blue);border-radius:12px;color:#54657a;font-size:12.5px;margin-bottom:24px}.highlight-note strong{color:#2e465f}.filterbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:28px 0 20px}.filter-label{color:#8a98a8;font-size:11px;font-weight:780;letter-spacing:.06em;margin-right:3px}.chip{border:1px solid #dce5ee;border-radius:100px;background:#fff;padding:8px 13px;font-size:11.5px;color:#617386;font-weight:650}.chip:hover{border-color:#99b1d4;color:#2354a4}.chip.active{background:#dfeafc;border-color:#c3d8fc;color:#1c4ba6}.result-count{margin-left:auto;color:#8a98a8;font-size:11.5px}
+.questions{display:grid;gap:20px}.question-card{scroll-margin-top:105px;padding:clamp(20px,3.2vw,35px);background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.qhead{border-bottom:1px solid #e8eef4;padding-bottom:17px;margin-bottom:17px}.qline{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}.qnumber{display:inline-flex;align-items:center;background:#e6efff;color:#2054b9;padding:5px 9px;border-radius:7px;font-size:11px;font-weight:850;letter-spacing:.03em}.mark{font-size:11px;color:#5b7187;font-weight:700}.source{font-size:10.5px;color:#8797a8;border-left:1px solid #d6dfe8;padding-left:10px}.qhead h2{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.027em;line-height:1.36;font-weight:740;margin:0;color:#1b2e42}.answer{color:#34475b;line-height:1.82;font-size:14px}.answer p{margin:0 0 13px}.answer p:last-child{margin-bottom:0}.answer strong{font-weight:730;color:#162e4d}.answer code,.example code{background:#f0f4fa;color:#174b91;font-size:.89em;padding:2px 4px;border-radius:4px}.answer ul,.answer ol{padding-left:22px;margin:12px 0}.answer li{margin-bottom:7px}.example{border-radius:10px;background:#f3f7fd;border:1px solid #e0e9f6;padding:13px 16px;margin-top:16px;font-size:12.5px;color:#3d5268}.example strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#4770a9;margin-bottom:6px}.example p{margin:0}.snippet-title{font-size:10.5px;font-weight:800;letter-spacing:.08em;color:#7b8b9d;text-transform:uppercase;margin:19px 0 8px}.code{background:#14233a;color:#e6edf7;line-height:1.65;border:1px solid #263b56;padding:17px 19px;margin:0;border-radius:11px;font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere;overflow-x:auto}.qbottom{border-top:1px solid #edf1f6;margin-top:18px;padding-top:12px;display:flex;justify-content:space-between;gap:15px;align-items:center;font-size:10.5px;color:#9aa6b3}.qbottom a{color:#7d96b5;font-weight:700}.focus-card{border-color:#dbe4f2}.focus-card .qnumber{background:#e4f3f0;color:#087b6f}.reading-tip{margin-top:22px;padding:15px 18px;border-radius:12px;border:1px solid #dce5ef;font-size:12.5px;color:#587083;background:#f2f6fc}.reading-tip b{color:#30475e}.empty{padding:50px 15px;text-align:center;color:#8191a2;border:1px dashed #cbd8e6;border-radius:12px}.footer{margin-top:40px;font-size:11px;line-height:1.8;color:#8c99a8;border-top:1px solid var(--line);padding-top:20px}.hidden{display:none!important}.mobile-overlay{display:none}
+@media(max-width:1050px){.app{grid-template-columns:260px minmax(0,1fr)}.toolbar{padding:14px 22px}.content{padding:30px 25px 85px}}
+@media(max-width:760px){.app{display:block}.sidebar{position:fixed;top:0;left:0;bottom:0;width:min(84vw,315px);height:100dvh;transform:translateX(-105%);transition:transform .22s ease;box-shadow:12px 0 35px rgba(30,51,78,.12)}.sidebar.open{transform:translateX(0)}.mobile-overlay.open{display:block;position:fixed;inset:0;z-index:20;background:rgba(17,33,54,.48)}.mobile-menu{display:grid;place-items:center;width:40px;height:40px;background:#fff;border:1px solid var(--line);border-radius:10px;flex:0 0 40px}.toolbar{gap:9px;padding:12px 16px}.tool-right .btn{padding:10px}.tool-right .print-label{display:none}.content{padding:29px 16px 65px}.hero h1{font-size:36px}.question-card{padding:21px 19px;border-radius:14px}.stats{gap:7px}.stat{font-size:10px;padding:7px 10px}.filterbar{gap:6px}.chip{padding:7px 10px}.result-count{width:100%;margin-left:0}.answer{font-size:13.5px}.qhead h2{font-size:19px}.nav-label{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+@media print{html,body{background:white!important;font-family:Arial,sans-serif!important;scroll-behavior:auto!important}.app{display:block}.sidebar,.toolbar,.tabs,.filterbar,.qbottom,.reading-tip,.mobile-overlay,.no-print{display:none!important}.content{max-width:none;padding:0;margin:0}.hero{margin-bottom:15px}.hero h1{font-size:25px}.hero-desc{font-size:10px}.stats{margin:10px 0}.stat{padding:3px 7px;font-size:9px}.question-card{box-shadow:none;border:0;border-bottom:1px solid #bbb;padding:14px 0;margin:0;border-radius:0;break-inside:avoid;page-break-inside:avoid}.questions{display:block}.qhead{padding-bottom:7px;margin-bottom:9px}.qhead h2{font-size:14px}.answer{font-size:10.5px;line-height:1.48}.answer p{margin-bottom:6px}.code{background:#f2f2f2!important;color:#222!important;border:1px solid #ddd!important;font-size:9px}.example{padding:7px 9px}.highlight-note{font-size:9px;padding:8px}.source,.mark,.qnumber{font-size:8px!important}.footer{font-size:8px}.hidden,.question-card.hidden{display:none!important}a{color:#222}}
+</style>
+</head>
+<body id="top">
+<div class="mobile-overlay" id="overlay"></div>
+<div class="app">
+ <aside class="sidebar" id="sidebar" aria-label="Question navigation">
+   <div class="sidebar-brand"><a class="brand" href="#top"><span class="logo">BN</span><span><span class="brand-text">Exam Companion</span><br><span class="brand-sub">BN109 · Web & Multimedia</span></span></a></div>
+   <div class="nav-label" id="sidebar-heading">Question index</div><div class="side-summary"><span id="side-mode">All questions</span><strong id="side-count">50 total</strong></div>
+   <nav class="side-scroll" id="side-all" aria-label="All 50 questions"><a href="#q1" class="nav-q" data-n="1"><span>Q01</span><span>Explain the functions of HTTP and DNS.</span></a><a href="#q2" class="nav-q" data-n="2"><span>Q02</span><span>Explain the three goals of information security (CIA triad).</span></a><a href="#q3" class="nav-q" data-n="3"><span>Q03</span><span>Differentiate an intranet and an extranet.</span></a><a href="#q4" class="nav-q" data-n="4"><span>Q04</span><span>Explain the purpose of the alt attribute in an HTML image.</span></a><a href="#q5" class="nav-q" data-n="5"><span>Q05</span><span>Differentiate relative and absolute hyperlinks.</span></a><a href="#q6" class="nav-q" data-n="6"><span>Q06</span><span>Differentiate ordered and unordered lists in HTML.</span></a><a href="#q7" class="nav-q" data-n="7"><span>Q07</span><span>What is the div element and why should it be used sparingly?</span></a><a href="#q8" class="nav-q" data-n="8"><span>Q08</span><span>Explain the selector, property and value in a CSS rule.</span></a><a href="#q9" class="nav-q" data-n="9"><span>Q09</span><span>Differentiate ID and class selectors in CSS.</span></a><a href="#q10" class="nav-q" data-n="10"><span>Q10</span><span>Differentiate block-level and inline elements.</span></a><a href="#q11" class="nav-q" data-n="11"><span>Q11</span><span>Differentiate a WYSIWYG editor and a text editor.</span></a><a href="#q12" class="nav-q" data-n="12"><span>Q12</span><span>Explain the three-click rule in website navigation.</span></a><a href="#q13" class="nav-q" data-n="13"><span>Q13</span><span>Explain the four WCAG POUR accessibility principles.</span></a><a href="#q14" class="nav-q" data-n="14"><span>Q14</span><span>Explain the purpose of the HTML main semantic element.</span></a><a href="#q15" class="nav-q" data-n="15"><span>Q15</span><span>Differentiate a wireframe and a site map.</span></a><a href="#q16" class="nav-q" data-n="16"><span>Q16</span><span>Explain active and passive white space and why designers use them.</span></a><a href="#q17" class="nav-q" data-n="17"><span>Q17</span><span>Why is a hierarchical structure often used for a business website?</span></a><a href="#q18" class="nav-q" data-n="18"><span>Q18</span><span>Explain the four stages of the user-centred design process.</span></a><a href="#q19" class="nav-q" data-n="19"><span>Q19</span><span>Why must the target audience be identified before a multimedia product is designed?</span></a><a href="#q20" class="nav-q" data-n="20"><span>Q20</span><span>What is previsualization? Name two of its tools.</span></a><a href="#q21" class="nav-q" data-n="21"><span>Q21</span><span>How do short paragraphs and bullet points help online readers?</span></a><a href="#q22" class="nav-q" data-n="22"><span>Q22</span><span>Why is “click here” poor link text?</span></a><a href="#q23" class="nav-q" data-n="23"><span>Q23</span><span>Explain the RCPA principles of visual design, with one example of each.</span></a><a href="#q24" class="nav-q" data-n="24"><span>Q24</span><span>Why should each form label be linked to its input?</span></a><a href="#q25" class="nav-q" data-n="25"><span>Q25</span><span>Explain what border-collapse and padding do in table styling.</span></a><a href="#q26" class="nav-q" data-n="26"><span>Q26</span><span>How can Flexbox build a two-column page layout?</span></a><a href="#q27" class="nav-q" data-n="27"><span>Q27</span><span>What is responsive web design and how do media queries help?</span></a><a href="#q28" class="nav-q" data-n="28"><span>Q28</span><span>Explain zebra rows, hover effects and responsive design for tables.</span></a><a href="#q29" class="nav-q" data-n="29"><span>Q29</span><span>Explain the roles of label, input, textarea and button in a contact form.</span></a><a href="#q30" class="nav-q" data-n="30"><span>Q30</span><span>Explain the purpose of table, tr, th and td in HTML.</span></a><a href="#q31" class="nav-q" data-n="31"><span>Q31</span><span>Compare GIF, JPEG, PNG and SVG image formats.</span></a><a href="#q32" class="nav-q" data-n="32"><span>Q32</span><span>Differentiate lossy and lossless compression with examples.</span></a><a href="#q33" class="nav-q" data-n="33"><span>Q33</span><span>Differentiate raster and vector graphics. Why do resolution and aspect ratio matter?</span></a><a href="#q34" class="nav-q" data-n="34"><span>Q34</span><span>Compare RGB and CMYK colour spaces. Which is suitable for web design?</span></a><a href="#q35" class="nav-q" data-n="35"><span>Q35</span><span>Differentiate aliasing and anti-aliasing in digital images.</span></a><a href="#q36" class="nav-q" data-n="36"><span>Q36</span><span>Define animation and explain persistence of vision and frame rate.</span></a><a href="#q37" class="nav-q" data-n="37"><span>Q37</span><span>Explain keyframes, tweening and interpolation in animation.</span></a><a href="#q38" class="nav-q" data-n="38"><span>Q38</span><span>Differentiate 2D, 2.5D and 3D animation.</span></a><a href="#q39" class="nav-q" data-n="39"><span>Q39</span><span>Explain two benefits and two problems of animation on websites.</span></a><a href="#q40" class="nav-q" data-n="40"><span>Q40</span><span>Explain copyright and public-domain material in multimedia.</span></a><a href="#q41" class="nav-q" data-n="41"><span>Q41</span><span>Explain licences, fair use or fair dealing in multimedia projects.</span></a><a href="#q42" class="nav-q" data-n="42"><span>Q42</span><span>What is digital rights management (DRM) and why is it important?</span></a><a href="#q43" class="nav-q" data-n="43"><span>Q43</span><span>A community sports centre needs Home, Classes, Trainers, Gallery, Timetable and Contact pages. Propose a site structure and explain accessibility and mobile design.</span></a><a href="#q44" class="nav-q" data-n="44"><span>Q44</span><span>A client wants online photographs, background music and a copied promotional clip. Explain copyright, public domain, fair dealing and DRM, then recommend lawful actions.</span></a><a href="#q45" class="nav-q" data-n="45"><span>Q45</span><span>A small business needs an organised website and readable web content. Recommend navigation, writing style and visual design.</span></a><a href="#q46" class="nav-q" data-n="46"><span>Q46</span><span>A college needs an accessible online registration form. Describe the HTML elements, validation and CSS needed.</span></a><a href="#q47" class="nav-q" data-n="47"><span>Q47</span><span>A company needs a logo, photograph, animated icon and transparent graphic. Choose file formats and explain resizing.</span></a><a href="#q48" class="nav-q" data-n="48"><span>Q48</span><span>A college plans a short promotional animation. Explain target audience, previsualization, production stages and usability.</span></a><a href="#q49" class="nav-q" data-n="49"><span>Q49</span><span>A college IT information website must explain networking and security. Describe HTTP, DNS and the CIA triad using practical examples.</span></a><a href="#q50" class="nav-q" data-n="50"><span>Q50</span><span>Design a mobile-friendly community service website with navigation, forms, tables and accessible content.</span></a></nav>
+   <nav class="side-scroll hidden" id="side-top" aria-label="Top 10 questions"><a href="#p1" class="nav-q"><span>01</span><span>Differentiate the Internet and the World Wide Web.</span></a><a href="#p2" class="nav-q"><span>02</span><span>Explain the purpose of two HTML5 semantic elements.</span></a><a href="#p3" class="nav-q"><span>03</span><span>Choose image formats for an animated icon and a digital photograph.</span></a><a href="#p4" class="nav-q"><span>04</span><span>Differentiate inline, embedded and external CSS; recommend one for a multi-page site.</span></a><a href="#p5" class="nav-q"><span>05</span><span>Compare hierarchical, linear and random website organisation.</span></a><a href="#p6" class="nav-q"><span>06</span><span>Explain the inverted pyramid writing style and its benefits.</span></a><a href="#p7" class="nav-q"><span>07</span><span>Explain label, input, textarea and button in a contact form.</span></a><a href="#p8" class="nav-q"><span>08</span><span>Explain zebra rows, hover effects and responsive table design.</span></a><a href="#p9" class="nav-q"><span>09</span><span>Compare raster and vector graphics, resolution and aspect ratio.</span></a><a href="#p10" class="nav-q"><span>10</span><span>Compare RGB and CMYK. Which is best for websites?</span></a></nav>
+   <div class="sidebar-footer">Prepared using BN109 lecture materials and the 2026 sample examination.</div>
+ </aside>
+ <div class="workspace">
+   <div class="toolbar">
+     <button class="mobile-menu" id="menu-toggle" title="Open question index" aria-expanded="false" aria-controls="sidebar"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+     <label class="search-wrap" aria-label="Search by keyword"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search" type="search" autocomplete="off" placeholder="Search questions, topics, keywords…"></label>
+     <div class="tool-right"><button id="print" class="btn" title="Print or save as PDF"><svg class="icon" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg><span class="print-label">Print / PDF</span></button></div>
+   </div>
+   <main class="content">
+    <header class="hero"><div class="hero-eyebrow">MIT Sydney · Exam revision guide</div><h1>Study the answers.<br><em>Remember the essentials.</em></h1><p class="hero-desc">Fifty student-friendly BN109 answers in one quiet reading space. No quizzes, no memory tricks, no clutter. Start with all 50 questions, then revise the 10 high-priority sample-exam topics.</p><div class="stats"><span class="stat"><b>50</b> full answers</span><span class="stat"><b>10</b> five-mark priorities</span><span class="stat"><b>3</b> study sections</span><span class="stat"><b>Works offline</b> when saved</span></div></header>
+    <div class="tabs" role="tablist" aria-label="Study mode"><button class="tab active" id="tab-all" role="tab" aria-selected="true">All 50 questions</button><button class="tab" id="tab-top" role="tab" aria-selected="false">Top 10 to master</button></div>
+    <section id="all-view" aria-label="All 50 exam questions">
+      <div class="highlight-note"><strong>About this question bank:</strong> Q1–Q25 follow the questions we studied together. Q26–Q50 are additional lecture-based revision questions and case studies, not claimed to be verbatim official exam questions. The question bank is for practice; actual examination questions may differ.</div>
+      <div class="filterbar" aria-label="Filter by section"><span class="filter-label">FILTER</span><button class="chip active" data-filter="all">All (50)</button><button class="chip" data-filter="A">5 marks · Q1–14</button><button class="chip" data-filter="B">4 marks · Q15–42</button><button class="chip" data-filter="C">8 marks · Q43–50</button><span class="result-count" id="result-all">Showing 50 questions</span></div>
+      <div class="questions" id="questions-all"><article class="question-card" id="q1" data-section="A" data-number="1" data-search="explain the functions of http and dns. **http (hypertext transfer protocol)** is the protocol that allows a web browser and a web server to communicate. when a user opens a website, the browser sends an http request and the server returns a response containing the webpage or other resources. **https** is the secure form of http because it encrypts information during transmission.
+
+**dns (domain name system)** translates human-readable domain names into ip addresses so computers can locate the correct server. for example, dns helps find the ip address associated with `www.example.com`, and then http or https is used to request the page.
+
+therefore, dns helps locate the website, while http is used to transfer the requested web content."><div class="qhead"><div class="qline"><span class="qnumber">Q01</span><span class="mark">5 marks</span><span class="source">L1</span></div><h2>Explain the functions of HTTP and DNS.</h2></div><div class="answer"><p><strong>HTTP (Hypertext Transfer Protocol)</strong> is the protocol that allows a web browser and a web server to communicate. When a user opens a website, the browser sends an HTTP request and the server returns a response containing the webpage or other resources. <strong>HTTPS</strong> is the secure form of HTTP because it encrypts information during transmission.</p>
+<p><strong>DNS (Domain Name System)</strong> translates human-readable domain names into IP addresses so computers can locate the correct server. For example, DNS helps find the IP address associated with <code>www.example.com</code>, and then HTTP or HTTPS is used to request the page.</p>
+<p>Therefore, DNS helps locate the website, while HTTP is used to transfer the requested web content.</p>
+</div><div class="example"><strong>Example</strong><p><strong>Example:</strong> When you type <code>www.example.com</code>, DNS resolves its address first; then the browser requests the webpage through HTTPS.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q2" data-section="A" data-number="2" data-search="explain the three goals of information security (cia triad). the **cia triad** represents three main goals of information security: confidentiality, integrity and availability.
+
+**confidentiality** means protecting information from unauthorised access. passwords, access controls and encryption help ensure that only authorised people can read sensitive data.
+
+**integrity** means maintaining the accuracy and completeness of information. data should not be changed without permission. checksums and access controls can help detect or prevent unauthorised changes.
+
+**availability** means ensuring that authorised users can access information and systems when needed. backups, reliable networks and system maintenance support availability.
+
+for example, an online banking system must keep customer details private, transaction records accurate and services available to customers."><div class="qhead"><div class="qline"><span class="qnumber">Q02</span><span class="mark">5 marks</span><span class="source">L1</span></div><h2>Explain the three goals of information security (CIA triad).</h2></div><div class="answer"><p>The <strong>CIA triad</strong> represents three main goals of information security: confidentiality, integrity and availability.</p>
+<p><strong>Confidentiality</strong> means protecting information from unauthorised access. Passwords, access controls and encryption help ensure that only authorised people can read sensitive data.</p>
+<p><strong>Integrity</strong> means maintaining the accuracy and completeness of information. Data should not be changed without permission. Checksums and access controls can help detect or prevent unauthorised changes.</p>
+<p><strong>Availability</strong> means ensuring that authorised users can access information and systems when needed. Backups, reliable networks and system maintenance support availability.</p>
+<p>For example, an online banking system must keep customer details private, transaction records accurate and services available to customers.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q3" data-section="A" data-number="3" data-search="differentiate an intranet and an extranet. an **intranet** is a private network used within an organisation. it provides employees with access to internal information such as announcements, documents and staff systems. access is normally restricted to authorised members of that organisation.
+
+an **extranet** is a controlled extension of an organisation&#x27;s private network that allows selected external users, such as suppliers, customers or business partners, to access specific information securely.
+
+the main difference is who can use the network: an intranet is mainly for internal staff, whereas an extranet includes approved external users. both use internet-related technologies and require appropriate security controls.
+
+for example, a company may use an intranet for employee payslips and an extranet for suppliers to check orders."><div class="qhead"><div class="qline"><span class="qnumber">Q03</span><span class="mark">5 marks</span><span class="source">L1</span></div><h2>Differentiate an intranet and an extranet.</h2></div><div class="answer"><p>An <strong>intranet</strong> is a private network used within an organisation. It provides employees with access to internal information such as announcements, documents and staff systems. Access is normally restricted to authorised members of that organisation.</p>
+<p>An <strong>extranet</strong> is a controlled extension of an organisation's private network that allows selected external users, such as suppliers, customers or business partners, to access specific information securely.</p>
+<p>The main difference is who can use the network: an intranet is mainly for internal staff, whereas an extranet includes approved external users. Both use Internet-related technologies and require appropriate security controls.</p>
+<p>For example, a company may use an intranet for employee payslips and an extranet for suppliers to check orders.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q4" data-section="A" data-number="4" data-search="explain the purpose of the alt attribute in an html image. the **`alt` attribute** provides alternative text describing an image in an html webpage. it is written inside the `&lt;img&gt;` element.
+
+its main purpose is **accessibility**. screen readers can read suitable alternative text aloud so users who cannot see an image can understand its meaning or function. alternative text can also appear when an image fails to load.
+
+good alt text should briefly describe meaningful information in the image rather than repeat unnecessary words. decorative images that do not convey information can use an empty alt value, `alt=&quot;&quot;`, so assistive technology can skip them.
+
+for example, an image of a student using a computer could have the description &quot;student working on a laptop in a classroom&quot;."><div class="qhead"><div class="qline"><span class="qnumber">Q04</span><span class="mark">5 marks</span><span class="source">L3</span></div><h2>Explain the purpose of the alt attribute in an HTML image.</h2></div><div class="answer"><p>The <strong><code>alt</code> attribute</strong> provides alternative text describing an image in an HTML webpage. It is written inside the <code>&lt;img&gt;</code> element.</p>
+<p>Its main purpose is <strong>accessibility</strong>. Screen readers can read suitable alternative text aloud so users who cannot see an image can understand its meaning or function. Alternative text can also appear when an image fails to load.</p>
+<p>Good alt text should briefly describe meaningful information in the image rather than repeat unnecessary words. Decorative images that do not convey information can use an empty alt value, <code>alt=&quot;&quot;</code>, so assistive technology can skip them.</p>
+<p>For example, an image of a student using a computer could have the description &quot;Student working on a laptop in a classroom&quot;.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;img src=&quot;student.jpg&quot; alt=&quot;Student working on a laptop in a classroom&quot;&gt;</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q5" data-section="A" data-number="5" data-search="differentiate relative and absolute hyperlinks. a **hyperlink** connects a webpage to another webpage, file or location. html uses the `&lt;a&gt;` element with an `href` attribute to create a link.
+
+an **absolute link** contains the complete web address, including the protocol and domain name. it is useful when linking to another website. for example, `https://example.com/contact.html` is an absolute address.
+
+a **relative link** identifies a resource based on the location of the current page. it usually does not contain the protocol or domain. for example, `contact.html` links to a file in the same folder.
+
+absolute links are generally useful for external websites, while relative links make internal site navigation easier to maintain."><div class="qhead"><div class="qline"><span class="qnumber">Q05</span><span class="mark">5 marks</span><span class="source">L3</span></div><h2>Differentiate relative and absolute hyperlinks.</h2></div><div class="answer"><p>A <strong>hyperlink</strong> connects a webpage to another webpage, file or location. HTML uses the <code>&lt;a&gt;</code> element with an <code>href</code> attribute to create a link.</p>
+<p>An <strong>absolute link</strong> contains the complete web address, including the protocol and domain name. It is useful when linking to another website. For example, <code>https://example.com/contact.html</code> is an absolute address.</p>
+<p>A <strong>relative link</strong> identifies a resource based on the location of the current page. It usually does not contain the protocol or domain. For example, <code>contact.html</code> links to a file in the same folder.</p>
+<p>Absolute links are generally useful for external websites, while relative links make internal site navigation easier to maintain.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;a href=&quot;https://example.com&quot;&gt;External website&lt;/a&gt;
+&lt;a href=&quot;contact.html&quot;&gt;Contact page&lt;/a&gt;</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q6" data-section="A" data-number="6" data-search="differentiate ordered and unordered lists in html. html provides different list elements to organise related information clearly.
+
+an **ordered list**, created using `&lt;ol&gt;`, displays list items in a specific sequence, usually with numbers. it is suitable when the order of items matters, such as instructions for completing a task.
+
+an **unordered list**, created using `&lt;ul&gt;`, displays items with bullet markers. it is suitable when the order does not matter, such as a list of services or subjects.
+
+both types use the `&lt;li&gt;` element to define each list item. the main difference is that ordered lists show sequence, while unordered lists show a collection of related items.
+
+for example, a registration procedure needs an ordered list, but a list of available courses can use an unordered list."><div class="qhead"><div class="qline"><span class="qnumber">Q06</span><span class="mark">5 marks</span><span class="source">L3</span></div><h2>Differentiate ordered and unordered lists in HTML.</h2></div><div class="answer"><p>HTML provides different list elements to organise related information clearly.</p>
+<p>An <strong>ordered list</strong>, created using <code>&lt;ol&gt;</code>, displays list items in a specific sequence, usually with numbers. It is suitable when the order of items matters, such as instructions for completing a task.</p>
+<p>An <strong>unordered list</strong>, created using <code>&lt;ul&gt;</code>, displays items with bullet markers. It is suitable when the order does not matter, such as a list of services or subjects.</p>
+<p>Both types use the <code>&lt;li&gt;</code> element to define each list item. The main difference is that ordered lists show sequence, while unordered lists show a collection of related items.</p>
+<p>For example, a registration procedure needs an ordered list, but a list of available courses can use an unordered list.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;ol&gt;&lt;li&gt;Open the form&lt;/li&gt;&lt;li&gt;Submit details&lt;/li&gt;&lt;/ol&gt;
+&lt;ul&gt;&lt;li&gt;Networking&lt;/li&gt;&lt;li&gt;Cybersecurity&lt;/li&gt;&lt;/ul&gt;</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q7" data-section="A" data-number="7" data-search="what is the div element and why should it be used sparingly? the html **`&lt;div&gt;` element** is a general-purpose container used to group other elements together. it does not describe the meaning of its content. developers often use it with css classes or ids to apply styles or create layouts.
+
+however, `&lt;div&gt;` should be used only when a more meaningful html element is not suitable. using too many generic div elements can make the page harder to understand and maintain. it also provides less information about page structure to assistive technologies.
+
+whenever possible, developers should use semantic elements such as `&lt;header&gt;`, `&lt;nav&gt;`, `&lt;main&gt;` and `&lt;section&gt;` because these describe the purpose of the content.
+
+for example, use `&lt;nav&gt;` for a navigation area instead of a div used only as a navigation wrapper."><div class="qhead"><div class="qline"><span class="qnumber">Q07</span><span class="mark">5 marks</span><span class="source">L2/L3</span></div><h2>What is the div element and why should it be used sparingly?</h2></div><div class="answer"><p>The HTML <strong><code>&lt;div&gt;</code> element</strong> is a general-purpose container used to group other elements together. It does not describe the meaning of its content. Developers often use it with CSS classes or IDs to apply styles or create layouts.</p>
+<p>However, <code>&lt;div&gt;</code> should be used only when a more meaningful HTML element is not suitable. Using too many generic div elements can make the page harder to understand and maintain. It also provides less information about page structure to assistive technologies.</p>
+<p>Whenever possible, developers should use semantic elements such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> and <code>&lt;section&gt;</code> because these describe the purpose of the content.</p>
+<p>For example, use <code>&lt;nav&gt;</code> for a navigation area instead of a div used only as a navigation wrapper.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q8" data-section="A" data-number="8" data-search="explain the selector, property and value in a css rule. **css (cascading style sheets)** controls the appearance and layout of html content. a css rule normally consists of a selector and one or more declarations.
+
+a **selector** identifies the html elements to be styled. a **property** identifies which visual feature will be changed, such as colour or font size. a **value** specifies the setting applied to that property.
+
+in the rule `p { color: blue; }`, `p` is the selector, `color` is the property and `blue` is the value. the rule makes the text inside all matching paragraph elements blue.
+
+css helps separate presentation from content and makes consistent styling easier across a website."><div class="qhead"><div class="qline"><span class="qnumber">Q08</span><span class="mark">5 marks</span><span class="source">L4</span></div><h2>Explain the selector, property and value in a CSS rule.</h2></div><div class="answer"><p><strong>CSS (Cascading Style Sheets)</strong> controls the appearance and layout of HTML content. A CSS rule normally consists of a selector and one or more declarations.</p>
+<p>A <strong>selector</strong> identifies the HTML elements to be styled. A <strong>property</strong> identifies which visual feature will be changed, such as colour or font size. A <strong>value</strong> specifies the setting applied to that property.</p>
+<p>In the rule <code>p { color: blue; }</code>, <code>p</code> is the selector, <code>color</code> is the property and <code>blue</code> is the value. The rule makes the text inside all matching paragraph elements blue.</p>
+<p>CSS helps separate presentation from content and makes consistent styling easier across a website.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>p {
+  color: blue;
+  font-size: 16px;
+}</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q9" data-section="A" data-number="9" data-search="differentiate id and class selectors in css. css uses **id selectors** and **class selectors** to apply styles to specific html elements.
+
+an **id selector** identifies an element using the `id` attribute and is written with the `#` symbol in css. an id should be unique within a webpage. for example, `#header` can style a particular header element.
+
+a **class selector** identifies elements using the `class` attribute and is written with a dot (`.`). the same class can be applied to many elements. for example, `.highlight` can style several paragraphs.
+
+the main difference is that ids are intended for unique elements, while classes are reusable. classes are generally preferred for styles repeated across a site."><div class="qhead"><div class="qline"><span class="qnumber">Q09</span><span class="mark">5 marks</span><span class="source">L4</span></div><h2>Differentiate ID and class selectors in CSS.</h2></div><div class="answer"><p>CSS uses <strong>ID selectors</strong> and <strong>class selectors</strong> to apply styles to specific HTML elements.</p>
+<p>An <strong>ID selector</strong> identifies an element using the <code>id</code> attribute and is written with the <code>#</code> symbol in CSS. An ID should be unique within a webpage. For example, <code>#header</code> can style a particular header element.</p>
+<p>A <strong>class selector</strong> identifies elements using the <code>class</code> attribute and is written with a dot (<code>.</code>). The same class can be applied to many elements. For example, <code>.highlight</code> can style several paragraphs.</p>
+<p>The main difference is that IDs are intended for unique elements, while classes are reusable. Classes are generally preferred for styles repeated across a site.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>#header { background: navy; }
+.highlight { color: red; }</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q10" data-section="A" data-number="10" data-search="differentiate block-level and inline elements. html elements can behave as **block-level** or **inline** elements when displayed on a webpage.
+
+a **block-level element** normally starts on a new line and occupies the available horizontal space in its container. examples include `&lt;div&gt;`, `&lt;p&gt;` and `&lt;h1&gt;`. block elements are useful for organising major sections of content.
+
+an **inline element** normally remains within the same line as surrounding text and occupies only the space required by its content. examples include `&lt;span&gt;`, `&lt;strong&gt;` and `&lt;a&gt;`.
+
+for example, a paragraph appears as a separate block, whereas a hyperlink can appear within a sentence.
+
+css can change an element&#x27;s display behaviour using the `display` property, so the distinction describes typical default behaviour."><div class="qhead"><div class="qline"><span class="qnumber">Q10</span><span class="mark">5 marks</span><span class="source">L4</span></div><h2>Differentiate block-level and inline elements.</h2></div><div class="answer"><p>HTML elements can behave as <strong>block-level</strong> or <strong>inline</strong> elements when displayed on a webpage.</p>
+<p>A <strong>block-level element</strong> normally starts on a new line and occupies the available horizontal space in its container. Examples include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code> and <code>&lt;h1&gt;</code>. Block elements are useful for organising major sections of content.</p>
+<p>An <strong>inline element</strong> normally remains within the same line as surrounding text and occupies only the space required by its content. Examples include <code>&lt;span&gt;</code>, <code>&lt;strong&gt;</code> and <code>&lt;a&gt;</code>.</p>
+<p>For example, a paragraph appears as a separate block, whereas a hyperlink can appear within a sentence.</p>
+<p>CSS can change an element's display behaviour using the <code>display</code> property, so the distinction describes typical default behaviour.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q11" data-section="A" data-number="11" data-search="differentiate a wysiwyg editor and a text editor. a **wysiwyg editor** stands for *what you see is what you get*. it allows developers to design a webpage visually, with the editing view resembling the final webpage. users can add text, images and formatting without writing every html tag manually.
+
+a **text editor** is used to write and edit webpage source code directly, including html, css and javascript. it gives developers more precise control over the structure and behaviour of a website, but requires knowledge of the relevant languages.
+
+the main difference is the method of creation: wysiwyg editors focus on visual editing, while text editors focus on code.
+
+for example, a visual website builder is wysiwyg, while visual studio code is a code editor."><div class="qhead"><div class="qline"><span class="qnumber">Q11</span><span class="mark">5 marks</span><span class="source">L1</span></div><h2>Differentiate a WYSIWYG editor and a text editor.</h2></div><div class="answer"><p>A <strong>WYSIWYG editor</strong> stands for <em>What You See Is What You Get</em>. It allows developers to design a webpage visually, with the editing view resembling the final webpage. Users can add text, images and formatting without writing every HTML tag manually.</p>
+<p>A <strong>text editor</strong> is used to write and edit webpage source code directly, including HTML, CSS and JavaScript. It gives developers more precise control over the structure and behaviour of a website, but requires knowledge of the relevant languages.</p>
+<p>The main difference is the method of creation: WYSIWYG editors focus on visual editing, while text editors focus on code.</p>
+<p>For example, a visual website builder is WYSIWYG, while Visual Studio Code is a code editor.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q12" data-section="A" data-number="12" data-search="explain the three-click rule in website navigation. the **three-click rule** is a website usability guideline suggesting that users should be able to find important information within approximately three clicks from the home page.
+
+its purpose is to encourage simple navigation and prevent visitors from getting lost in a complicated site structure. clear menus, logical categories and useful internal links help users reach information quickly.
+
+for example, a visitor may follow **home → courses → networking** to find information about a specific course in two clicks.
+
+the rule is a guideline rather than a strict requirement. a well-organised website may still be easy to use when a task requires more clicks. clear navigation and user expectations matter more than the number alone."><div class="qhead"><div class="qline"><span class="qnumber">Q12</span><span class="mark">5 marks</span><span class="source">L5</span></div><h2>Explain the three-click rule in website navigation.</h2></div><div class="answer"><p>The <strong>three-click rule</strong> is a website usability guideline suggesting that users should be able to find important information within approximately three clicks from the home page.</p>
+<p>Its purpose is to encourage simple navigation and prevent visitors from getting lost in a complicated site structure. Clear menus, logical categories and useful internal links help users reach information quickly.</p>
+<p>For example, a visitor may follow <strong>Home → Courses → Networking</strong> to find information about a specific course in two clicks.</p>
+<p>The rule is a guideline rather than a strict requirement. A well-organised website may still be easy to use when a task requires more clicks. Clear navigation and user expectations matter more than the number alone.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q13" data-section="A" data-number="13" data-search="explain the four wcag pour accessibility principles. the **web content accessibility guidelines (wcag)** use four main principles, commonly remembered as **pour**.
+
+**perceivable:** information must be available in forms users can perceive. for example, images should have meaningful alternative text.
+
+**operable:** users must be able to interact with the website. for example, navigation and controls should work with a keyboard.
+
+**understandable:** content and navigation should be clear and predictable. for example, forms should have clear instructions and error messages.
+
+**robust:** content should work reliably with different browsers and assistive technologies. for example, developers should use valid, semantic html.
+
+together, these principles help make websites usable by people with different abilities and technologies."><div class="qhead"><div class="qline"><span class="qnumber">Q13</span><span class="mark">5 marks</span><span class="source">L5</span></div><h2>Explain the four WCAG POUR accessibility principles.</h2></div><div class="answer"><p>The <strong>Web Content Accessibility Guidelines (WCAG)</strong> use four main principles, commonly remembered as <strong>POUR</strong>.</p>
+<p><strong>Perceivable:</strong> Information must be available in forms users can perceive. For example, images should have meaningful alternative text.</p>
+<p><strong>Operable:</strong> Users must be able to interact with the website. For example, navigation and controls should work with a keyboard.</p>
+<p><strong>Understandable:</strong> Content and navigation should be clear and predictable. For example, forms should have clear instructions and error messages.</p>
+<p><strong>Robust:</strong> Content should work reliably with different browsers and assistive technologies. For example, developers should use valid, semantic HTML.</p>
+<p>Together, these principles help make websites usable by people with different abilities and technologies.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q14" data-section="A" data-number="14" data-search="explain the purpose of the html main semantic element. the html **`&lt;main&gt;` element** identifies the primary content of a webpage. it contains information that is central to the page&#x27;s main purpose, such as an article, course description or product information.
+
+using `&lt;main&gt;` makes the webpage structure more meaningful than using only generic `&lt;div&gt;` elements. it can also support accessibility by allowing assistive technology users to move directly to the main content instead of navigating through repeated headers and menus.
+
+a webpage should normally have one visible main landmark. repeated content such as site navigation, logos and footer information should be placed outside the main element.
+
+for example, on a course webpage, the title, course description and subject details belong inside `&lt;main&gt;`."><div class="qhead"><div class="qline"><span class="qnumber">Q14</span><span class="mark">5 marks</span><span class="source">L2</span></div><h2>Explain the purpose of the HTML main semantic element.</h2></div><div class="answer"><p>The HTML <strong><code>&lt;main&gt;</code> element</strong> identifies the primary content of a webpage. It contains information that is central to the page's main purpose, such as an article, course description or product information.</p>
+<p>Using <code>&lt;main&gt;</code> makes the webpage structure more meaningful than using only generic <code>&lt;div&gt;</code> elements. It can also support accessibility by allowing assistive technology users to move directly to the main content instead of navigating through repeated headers and menus.</p>
+<p>A webpage should normally have one visible main landmark. Repeated content such as site navigation, logos and footer information should be placed outside the main element.</p>
+<p>For example, on a course webpage, the title, course description and subject details belong inside <code>&lt;main&gt;</code>.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;header&gt;College logo&lt;/header&gt;
+&lt;nav&gt;Home | Courses | Contact&lt;/nav&gt;
+&lt;main&gt;&lt;h1&gt;Bachelor of Networking&lt;/h1&gt;&lt;/main&gt;
+&lt;footer&gt;Contact information&lt;/footer&gt;</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q15" data-section="B" data-number="15" data-search="differentiate a wireframe and a site map. a **site map** shows the overall organisation of a website and how different webpages are connected. it normally uses a hierarchical structure to display links between the home page and other sections.
+
+a **wireframe** is a simple visual layout of an individual webpage. it shows the planned positions of elements such as the header, navigation menu, content area and footer.
+
+the main difference is that a site map shows **website structure**, while a wireframe shows **page layout**. both are useful during website planning because they help developers organise content and navigation before coding."><div class="qhead"><div class="qline"><span class="qnumber">Q15</span><span class="mark">4 marks</span><span class="source">L1/L2</span></div><h2>Differentiate a wireframe and a site map.</h2></div><div class="answer"><p>A <strong>site map</strong> shows the overall organisation of a website and how different webpages are connected. It normally uses a hierarchical structure to display links between the home page and other sections.</p>
+<p>A <strong>wireframe</strong> is a simple visual layout of an individual webpage. It shows the planned positions of elements such as the header, navigation menu, content area and footer.</p>
+<p>The main difference is that a site map shows <strong>website structure</strong>, while a wireframe shows <strong>page layout</strong>. Both are useful during website planning because they help developers organise content and navigation before coding.</p>
+</div><div class="example"><strong>Example</strong><p><strong>Example:</strong> A site map connects Home, Courses and Contact. A wireframe shows where the Courses page title, menu and content will appear.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q16" data-section="B" data-number="16" data-search="explain active and passive white space and why designers use them. **white space** refers to empty areas of a webpage that improve organisation and readability.
+
+**active white space** is intentionally left blank by the designer to direct users&#x27; attention to important content. for example, large empty space around an apply now button can make it stand out.
+
+**passive white space** is the natural spacing between elements such as paragraphs, images and headings. it helps separate different sections of information.
+
+both types prevent a webpage from appearing crowded. active white space creates focus, while passive white space improves readability and the visual relationship between content elements."><div class="qhead"><div class="qline"><span class="qnumber">Q16</span><span class="mark">4 marks</span><span class="source">L1</span></div><h2>Explain active and passive white space and why designers use them.</h2></div><div class="answer"><p><strong>White space</strong> refers to empty areas of a webpage that improve organisation and readability.</p>
+<p><strong>Active white space</strong> is intentionally left blank by the designer to direct users' attention to important content. For example, large empty space around an Apply Now button can make it stand out.</p>
+<p><strong>Passive white space</strong> is the natural spacing between elements such as paragraphs, images and headings. It helps separate different sections of information.</p>
+<p>Both types prevent a webpage from appearing crowded. Active white space creates focus, while passive white space improves readability and the visual relationship between content elements.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q17" data-section="B" data-number="17" data-search="why is a hierarchical structure often used for a business website? a **hierarchical website structure** arranges webpages in a tree-like organisation, starting from a main home page.
+
+it is suitable for business websites because major sections, such as products, services, about us and contact, can be grouped into clear categories. visitors can follow logical links to find information quickly.
+
+however, the structure should not be too deep because too many levels may require excessive clicks and confuse users.
+
+for example, a shop may use home → products → laptops. a balanced hierarchy improves navigation, website organisation and overall user experience."><div class="qhead"><div class="qline"><span class="qnumber">Q17</span><span class="mark">4 marks</span><span class="source">L5</span></div><h2>Why is a hierarchical structure often used for a business website?</h2></div><div class="answer"><p>A <strong>hierarchical website structure</strong> arranges webpages in a tree-like organisation, starting from a main home page.</p>
+<p>It is suitable for business websites because major sections, such as Products, Services, About Us and Contact, can be grouped into clear categories. Visitors can follow logical links to find information quickly.</p>
+<p>However, the structure should not be too deep because too many levels may require excessive clicks and confuse users.</p>
+<p>For example, a shop may use Home → Products → Laptops. A balanced hierarchy improves navigation, website organisation and overall user experience.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q18" data-section="B" data-number="18" data-search="explain the four stages of the user-centred design process. **user-centred design** focuses on users&#x27; needs throughout the development of a multimedia product. a common four-stage workflow includes:
+
+**analysis:** identify users, their needs and project requirements through research.
+
+**design:** plan the structure, content and appearance using ideas, wireframes or mockups.
+
+**implementation:** develop a working prototype based on the planned design.
+
+**deployment:** publish or distribute the product so users can access it.
+
+the process is **iterative**, meaning designers can use feedback to return to earlier stages and improve the product. for example, after student testing, a team may redesign a confusing navigation menu."><div class="qhead"><div class="qline"><span class="qnumber">Q18</span><span class="mark">4 marks</span><span class="source">L7</span></div><h2>Explain the four stages of the user-centred design process.</h2></div><div class="answer"><p><strong>User-centred design</strong> focuses on users' needs throughout the development of a multimedia product. A common four-stage workflow includes:</p>
+<p><strong>Analysis:</strong> Identify users, their needs and project requirements through research.</p>
+<p><strong>Design:</strong> Plan the structure, content and appearance using ideas, wireframes or mockups.</p>
+<p><strong>Implementation:</strong> Develop a working prototype based on the planned design.</p>
+<p><strong>Deployment:</strong> Publish or distribute the product so users can access it.</p>
+<p>The process is <strong>iterative</strong>, meaning designers can use feedback to return to earlier stages and improve the product. For example, after student testing, a team may redesign a confusing navigation menu.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q19" data-section="B" data-number="19" data-search="why must the target audience be identified before a multimedia product is designed? the **target audience** is the group of people for whom a multimedia product is created. identifying this group before design helps developers understand users&#x27; needs, preferences and expectations.
+
+factors such as age, cultural background and interests can influence the choice of language, graphics, sound, navigation and features.
+
+for example, a children&#x27;s educational game may use colourful images, animation and simple instructions, while an adult fitness website may focus on schedules and membership information.
+
+understanding the target audience helps produce a multimedia product that is appropriate, useful and easy for its intended users to understand."><div class="qhead"><div class="qline"><span class="qnumber">Q19</span><span class="mark">4 marks</span><span class="source">L7</span></div><h2>Why must the target audience be identified before a multimedia product is designed?</h2></div><div class="answer"><p>The <strong>target audience</strong> is the group of people for whom a multimedia product is created. Identifying this group before design helps developers understand users' needs, preferences and expectations.</p>
+<p>Factors such as age, cultural background and interests can influence the choice of language, graphics, sound, navigation and features.</p>
+<p>For example, a children's educational game may use colourful images, animation and simple instructions, while an adult fitness website may focus on schedules and membership information.</p>
+<p>Understanding the target audience helps produce a multimedia product that is appropriate, useful and easy for its intended users to understand.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q20" data-section="B" data-number="20" data-search="what is previsualization? name two of its tools. **previsualization** is the process of converting a multimedia story idea or concept into a written or illustrated form before production begins. it helps the team plan the content, scenes and sequence of a project.
+
+a **storyboard** is a series of drawings or images arranged in order to show how scenes will appear in the final production.
+
+a **script** is a written document describing dialogue, actions and events that will occur.
+
+another tool is a **treatment**, which briefly summarises the main story or concept.
+
+for example, a college promotional video can use a storyboard for scenes and a script for narration."><div class="qhead"><div class="qline"><span class="qnumber">Q20</span><span class="mark">4 marks</span><span class="source">L7</span></div><h2>What is previsualization? Name two of its tools.</h2></div><div class="answer"><p><strong>Previsualization</strong> is the process of converting a multimedia story idea or concept into a written or illustrated form before production begins. It helps the team plan the content, scenes and sequence of a project.</p>
+<p>A <strong>storyboard</strong> is a series of drawings or images arranged in order to show how scenes will appear in the final production.</p>
+<p>A <strong>script</strong> is a written document describing dialogue, actions and events that will occur.</p>
+<p>Another tool is a <strong>treatment</strong>, which briefly summarises the main story or concept.</p>
+<p>For example, a college promotional video can use a storyboard for scenes and a script for narration.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q21" data-section="B" data-number="21" data-search="how do short paragraphs and bullet points help online readers? short paragraphs and bullet points are web-writing techniques that improve readability and make online information easier to scan.
+
+**short paragraphs** divide large blocks of text into smaller sections. they help readers understand one idea at a time without feeling overwhelmed.
+
+**bullet points** organise related facts into a clear list and allow visitors to identify key information quickly without reading every sentence.
+
+these techniques are important because many online users scan webpages rather than read them word for word.
+
+for example, a college website can use a short introductory paragraph followed by bullet points listing course duration, subjects and entry requirements."><div class="qhead"><div class="qline"><span class="qnumber">Q21</span><span class="mark">4 marks</span><span class="source">L5</span></div><h2>How do short paragraphs and bullet points help online readers?</h2></div><div class="answer"><p>Short paragraphs and bullet points are web-writing techniques that improve readability and make online information easier to scan.</p>
+<p><strong>Short paragraphs</strong> divide large blocks of text into smaller sections. They help readers understand one idea at a time without feeling overwhelmed.</p>
+<p><strong>Bullet points</strong> organise related facts into a clear list and allow visitors to identify key information quickly without reading every sentence.</p>
+<p>These techniques are important because many online users scan webpages rather than read them word for word.</p>
+<p>For example, a college website can use a short introductory paragraph followed by bullet points listing course duration, subjects and entry requirements.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q22" data-section="B" data-number="22" data-search="why is “click here” poor link text? **link text** is the clickable wording of a hyperlink. the phrase **“click here”** is poor because it does not explain the link&#x27;s destination or purpose.
+
+users scanning a webpage may not know where the link will take them. screen reader users may also hear links independently of surrounding text, making repeated “click here” links confusing.
+
+descriptive link text identifies what the user will find after opening the link and improves both navigation and accessibility.
+
+for example, replace “click here” with **“view class timetable”** or **“download lecture notes”**. clear link wording helps users understand the purpose of each hyperlink."><div class="qhead"><div class="qline"><span class="qnumber">Q22</span><span class="mark">4 marks</span><span class="source">L5</span></div><h2>Why is “click here” poor link text?</h2></div><div class="answer"><p><strong>Link text</strong> is the clickable wording of a hyperlink. The phrase <strong>“click here”</strong> is poor because it does not explain the link's destination or purpose.</p>
+<p>Users scanning a webpage may not know where the link will take them. Screen reader users may also hear links independently of surrounding text, making repeated “click here” links confusing.</p>
+<p>Descriptive link text identifies what the user will find after opening the link and improves both navigation and accessibility.</p>
+<p>For example, replace “click here” with <strong>“View class timetable”</strong> or <strong>“Download lecture notes”</strong>. Clear link wording helps users understand the purpose of each hyperlink.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q23" data-section="B" data-number="23" data-search="explain the rcpa principles of visual design, with one example of each. the **rcpa principles** are four visual design principles used to improve website appearance and organisation.
+
+**repetition:** repeat fonts, colours or styles to create consistency. for example, use the same navigation style on every page.
+
+**contrast:** create visible differences to highlight important elements. for example, use a dark button on a light background.
+
+**proximity:** place related items close together. for example, keep a form label beside its input field.
+
+**alignment:** arrange elements along a common edge or line. for example, align all headings and paragraphs to the left.
+
+together, rcpa principles improve clarity, visual balance and readability."><div class="qhead"><div class="qline"><span class="qnumber">Q23</span><span class="mark">4 marks</span><span class="source">L5</span></div><h2>Explain the RCPA principles of visual design, with one example of each.</h2></div><div class="answer"><p>The <strong>RCPA principles</strong> are four visual design principles used to improve website appearance and organisation.</p>
+<p><strong>Repetition:</strong> Repeat fonts, colours or styles to create consistency. For example, use the same navigation style on every page.</p>
+<p><strong>Contrast:</strong> Create visible differences to highlight important elements. For example, use a dark button on a light background.</p>
+<p><strong>Proximity:</strong> Place related items close together. For example, keep a form label beside its input field.</p>
+<p><strong>Alignment:</strong> Arrange elements along a common edge or line. For example, align all headings and paragraphs to the left.</p>
+<p>Together, RCPA principles improve clarity, visual balance and readability.</p>
+</div><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q24" data-section="B" data-number="24" data-search="why should each form label be linked to its input? an html **label** describes the purpose of an input field. linking it correctly to its input makes a form more accessible and easier to use.
+
+when a label is associated with an input, screen readers can announce the field&#x27;s purpose. this helps users understand what information should be entered.
+
+users can also click the label to focus the linked input, which makes small form controls easier to use.
+
+in html, the label&#x27;s `for` attribute should match the input&#x27;s `id` attribute. for example, `for=&quot;email&quot;` links to `id=&quot;email&quot;`.
+
+this improves accessibility, navigation and overall form usability."><div class="qhead"><div class="qline"><span class="qnumber">Q24</span><span class="mark">4 marks</span><span class="source">L6</span></div><h2>Why should each form label be linked to its input?</h2></div><div class="answer"><p>An HTML <strong>label</strong> describes the purpose of an input field. Linking it correctly to its input makes a form more accessible and easier to use.</p>
+<p>When a label is associated with an input, screen readers can announce the field's purpose. This helps users understand what information should be entered.</p>
+<p>Users can also click the label to focus the linked input, which makes small form controls easier to use.</p>
+<p>In HTML, the label's <code>for</code> attribute should match the input's <code>id</code> attribute. For example, <code>for=&quot;email&quot;</code> links to <code>id=&quot;email&quot;</code>.</p>
+<p>This improves accessibility, navigation and overall form usability.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;
+&lt;input id=&quot;email&quot; type=&quot;email&quot;&gt;</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q25" data-section="B" data-number="25" data-search="explain what border-collapse and padding do in table styling. css is used to improve the appearance and readability of html tables.
+
+**`border-collapse`** controls how borders between neighbouring table cells are displayed. when `border-collapse: collapse;` is used, adjacent cell borders merge into a single shared border instead of appearing separately. this makes the table look neat and consistent.
+
+**`padding`** creates space between the content of a cell and its border. for example, `padding: 10px;` keeps text from touching the edges and makes table data easier to read.
+
+therefore, border-collapse improves border appearance, while padding improves internal spacing and readability."><div class="qhead"><div class="qline"><span class="qnumber">Q25</span><span class="mark">4 marks</span><span class="source">L6</span></div><h2>Explain what border-collapse and padding do in table styling.</h2></div><div class="answer"><p>CSS is used to improve the appearance and readability of HTML tables.</p>
+<p><strong><code>border-collapse</code></strong> controls how borders between neighbouring table cells are displayed. When <code>border-collapse: collapse;</code> is used, adjacent cell borders merge into a single shared border instead of appearing separately. This makes the table look neat and consistent.</p>
+<p><strong><code>padding</code></strong> creates space between the content of a cell and its border. For example, <code>padding: 10px;</code> keeps text from touching the edges and makes table data easier to read.</p>
+<p>Therefore, border-collapse improves border appearance, while padding improves internal spacing and readability.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>table { border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 10px; }</code></pre><div class="qbottom"><span>Source-verified sequence</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q26" data-section="B" data-number="26" data-search="how can flexbox build a two-column page layout? **flexbox** is a css layout method used to arrange webpage elements in rows or columns.
+
+to create a two-column layout, place two elements inside a parent container and apply `display: flex;` to the container. the child elements then appear side by side by default.
+
+for example, a sidebar can use `width: 25%;`, while the main content uses `width: 75%;`. this produces a narrow sidebar and a wider content area.
+
+on smaller screens, a media query can change `flex-direction` to `column` so the two sections stack vertically. this helps make the page responsive."><div class="qhead"><div class="qline"><span class="qnumber">Q26</span><span class="mark">4 marks</span><span class="source">L6</span></div><h2>How can Flexbox build a two-column page layout?</h2></div><div class="answer"><p><strong>Flexbox</strong> is a CSS layout method used to arrange webpage elements in rows or columns.</p>
+<p>To create a two-column layout, place two elements inside a parent container and apply <code>display: flex;</code> to the container. The child elements then appear side by side by default.</p>
+<p>For example, a sidebar can use <code>width: 25%;</code>, while the main content uses <code>width: 75%;</code>. This produces a narrow sidebar and a wider content area.</p>
+<p>On smaller screens, a media query can change <code>flex-direction</code> to <code>column</code> so the two sections stack vertically. This helps make the page responsive.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>.container { display: flex; gap: 16px; }
+.sidebar { width: 25%; }
+.content { width: 75%; }
+@media (max-width: 600px) {
+  .container { flex-direction: column; }
+  .sidebar, .content { width: 100%; }
+}</code></pre><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q27" data-section="B" data-number="27" data-search="what is responsive web design and how do media queries help? **responsive web design** means creating webpages that adapt to different screen sizes, including phones, tablets and desktop computers.
+
+a responsive website uses flexible layouts, appropriately sized images and css rules so content remains readable without unnecessary horizontal scrolling.
+
+a **media query** applies certain css styles only when a device or viewport meets a condition. for example, a layout with three columns on a desktop can change into one column when the screen becomes narrow.
+
+responsive design improves usability because visitors can access the same information comfortably on different devices."><div class="qhead"><div class="qline"><span class="qnumber">Q27</span><span class="mark">4 marks</span><span class="source">L6</span></div><h2>What is responsive web design and how do media queries help?</h2></div><div class="answer"><p><strong>Responsive web design</strong> means creating webpages that adapt to different screen sizes, including phones, tablets and desktop computers.</p>
+<p>A responsive website uses flexible layouts, appropriately sized images and CSS rules so content remains readable without unnecessary horizontal scrolling.</p>
+<p>A <strong>media query</strong> applies certain CSS styles only when a device or viewport meets a condition. For example, a layout with three columns on a desktop can change into one column when the screen becomes narrow.</p>
+<p>Responsive design improves usability because visitors can access the same information comfortably on different devices.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>@media (max-width: 600px) {
+  .columns { display: block; }
+}</code></pre><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q28" data-section="B" data-number="28" data-search="explain zebra rows, hover effects and responsive design for tables. **zebra rows** use alternating background colours for table rows. they make it easier to follow information across a wide table.
+
+**hover effects** change the appearance of a row or element when a pointer moves over it. for example, a row can become highlighted to help users see which data they are examining.
+
+**responsive design** allows a table or multi-column layout to adapt to smaller screens. for example, a wide table can be placed in a horizontally scrollable container on mobile devices.
+
+together, these techniques improve readability, interaction and usability across different devices."><div class="qhead"><div class="qline"><span class="qnumber">Q28</span><span class="mark">4 marks</span><span class="source">L6/Sample</span></div><h2>Explain zebra rows, hover effects and responsive design for tables.</h2></div><div class="answer"><p><strong>Zebra rows</strong> use alternating background colours for table rows. They make it easier to follow information across a wide table.</p>
+<p><strong>Hover effects</strong> change the appearance of a row or element when a pointer moves over it. For example, a row can become highlighted to help users see which data they are examining.</p>
+<p><strong>Responsive design</strong> allows a table or multi-column layout to adapt to smaller screens. For example, a wide table can be placed in a horizontally scrollable container on mobile devices.</p>
+<p>Together, these techniques improve readability, interaction and usability across different devices.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>tr:nth-child(even) { background: #f5f7fb; }
+tr:hover { background: #e7f0ff; }
+.table-wrap { overflow-x: auto; }</code></pre><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q29" data-section="B" data-number="29" data-search="explain the roles of label, input, textarea and button in a contact form. an html contact form collects information from website visitors using different form elements.
+
+**`&lt;label&gt;`** describes a form field, such as name or email. **`&lt;input&gt;`** collects short information, such as a name or email address. **`&lt;textarea&gt;`** provides a larger area for longer messages or comments. **`&lt;button&gt;`** lets the user submit the form or perform another action.
+
+for usability, developers should provide sufficient padding and spacing around controls, use readable text with good contrast and connect labels to their fields.
+
+these elements work together to create an accessible, organised and easy-to-use contact form."><div class="qhead"><div class="qline"><span class="qnumber">Q29</span><span class="mark">4 marks</span><span class="source">L6/Sample</span></div><h2>Explain the roles of label, input, textarea and button in a contact form.</h2></div><div class="answer"><p>An HTML contact form collects information from website visitors using different form elements.</p>
+<p><strong><code>&lt;label&gt;</code></strong> describes a form field, such as Name or Email. <strong><code>&lt;input&gt;</code></strong> collects short information, such as a name or email address. <strong><code>&lt;textarea&gt;</code></strong> provides a larger area for longer messages or comments. <strong><code>&lt;button&gt;</code></strong> lets the user submit the form or perform another action.</p>
+<p>For usability, developers should provide sufficient padding and spacing around controls, use readable text with good contrast and connect labels to their fields.</p>
+<p>These elements work together to create an accessible, organised and easy-to-use contact form.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+&lt;input id=&quot;name&quot; type=&quot;text&quot;&gt;
+&lt;label for=&quot;message&quot;&gt;Message&lt;/label&gt;
+&lt;textarea id=&quot;message&quot;&gt;&lt;/textarea&gt;
+&lt;button type=&quot;submit&quot;&gt;Send&lt;/button&gt;</code></pre><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q30" data-section="B" data-number="30" data-search="explain the purpose of table, tr, th and td in html. an html **table** displays related data in rows and columns. it is suitable for structured information such as timetables, prices or student results.
+
+the **`&lt;table&gt;`** element creates the table. the **`&lt;tr&gt;`** element defines a table row. the **`&lt;th&gt;`** element creates a header cell that identifies a row or column, while **`&lt;td&gt;`** creates a normal data cell.
+
+using table headers helps users understand the relationship between headings and data. tables should be used for tabular information rather than for arranging an entire webpage layout.
+
+for example, a student marks table may have name and mark as headers, with student details in data cells."><div class="qhead"><div class="qline"><span class="qnumber">Q30</span><span class="mark">4 marks</span><span class="source">L6</span></div><h2>Explain the purpose of table, tr, th and td in HTML.</h2></div><div class="answer"><p>An HTML <strong>table</strong> displays related data in rows and columns. It is suitable for structured information such as timetables, prices or student results.</p>
+<p>The <strong><code>&lt;table&gt;</code></strong> element creates the table. The <strong><code>&lt;tr&gt;</code></strong> element defines a table row. The <strong><code>&lt;th&gt;</code></strong> element creates a header cell that identifies a row or column, while <strong><code>&lt;td&gt;</code></strong> creates a normal data cell.</p>
+<p>Using table headers helps users understand the relationship between headings and data. Tables should be used for tabular information rather than for arranging an entire webpage layout.</p>
+<p>For example, a student marks table may have Name and Mark as headers, with student details in data cells.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Mark&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Asha&lt;/td&gt;&lt;td&gt;85&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q31" data-section="B" data-number="31" data-search="compare gif, jpeg, png and svg image formats. different image formats are appropriate for different multimedia purposes.
+
+**gif** supports simple frame-based animation and a limited colour palette, making it useful for simple animated icons.
+
+**jpeg** supports photographic images with many colours and uses lossy compression to reduce file size.
+
+**png** uses lossless compression and supports transparency, making it useful for screenshots and graphics that require sharp edges.
+
+**svg** is a vector format that describes shapes mathematically, so it can scale without becoming pixelated. it is suitable for logos, icons and diagrams.
+
+choosing an appropriate format helps balance image quality, features and file size."><div class="qhead"><div class="qline"><span class="qnumber">Q31</span><span class="mark">4 marks</span><span class="source">L3/L8</span></div><h2>Compare GIF, JPEG, PNG and SVG image formats.</h2></div><div class="answer"><p>Different image formats are appropriate for different multimedia purposes.</p>
+<p><strong>GIF</strong> supports simple frame-based animation and a limited colour palette, making it useful for simple animated icons.</p>
+<p><strong>JPEG</strong> supports photographic images with many colours and uses lossy compression to reduce file size.</p>
+<p><strong>PNG</strong> uses lossless compression and supports transparency, making it useful for screenshots and graphics that require sharp edges.</p>
+<p><strong>SVG</strong> is a vector format that describes shapes mathematically, so it can scale without becoming pixelated. It is suitable for logos, icons and diagrams.</p>
+<p>Choosing an appropriate format helps balance image quality, features and file size.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q32" data-section="B" data-number="32" data-search="differentiate lossy and lossless compression with examples. **compression** reduces the size of a digital file so it takes less storage space and can load or transfer more efficiently.
+
+**lossy compression** removes some information permanently to produce smaller files. as a result, repeated editing or strong compression may reduce quality. jpeg photographs are a common example.
+
+**lossless compression** reduces file size without permanently removing the original information, allowing the data to be reconstructed exactly. png images are a common example.
+
+lossy compression is suitable when smaller file size is more important than perfect reproduction. lossless compression is suitable when preserving exact details is important."><div class="qhead"><div class="qline"><span class="qnumber">Q32</span><span class="mark">4 marks</span><span class="source">L3/L8</span></div><h2>Differentiate lossy and lossless compression with examples.</h2></div><div class="answer"><p><strong>Compression</strong> reduces the size of a digital file so it takes less storage space and can load or transfer more efficiently.</p>
+<p><strong>Lossy compression</strong> removes some information permanently to produce smaller files. As a result, repeated editing or strong compression may reduce quality. JPEG photographs are a common example.</p>
+<p><strong>Lossless compression</strong> reduces file size without permanently removing the original information, allowing the data to be reconstructed exactly. PNG images are a common example.</p>
+<p>Lossy compression is suitable when smaller file size is more important than perfect reproduction. Lossless compression is suitable when preserving exact details is important.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q33" data-section="B" data-number="33" data-search="differentiate raster and vector graphics. why do resolution and aspect ratio matter? **raster graphics** are made of pixels and are suitable for photographs. when enlarged too much, they may become blurry or pixelated. examples include jpeg and png.
+
+**vector graphics** use mathematical paths and shapes. they can be enlarged without losing clarity and are useful for logos and icons. svg is a common example.
+
+**resolution** describes the number of pixels in a raster image and influences how much detail it contains.
+
+**aspect ratio** is the relationship between an image&#x27;s width and height. keeping the original aspect ratio when resizing prevents stretching or distortion.
+
+therefore, resolution affects detail, while aspect ratio preserves correct proportions."><div class="qhead"><div class="qline"><span class="qnumber">Q33</span><span class="mark">4 marks</span><span class="source">L8/Sample</span></div><h2>Differentiate raster and vector graphics. Why do resolution and aspect ratio matter?</h2></div><div class="answer"><p><strong>Raster graphics</strong> are made of pixels and are suitable for photographs. When enlarged too much, they may become blurry or pixelated. Examples include JPEG and PNG.</p>
+<p><strong>Vector graphics</strong> use mathematical paths and shapes. They can be enlarged without losing clarity and are useful for logos and icons. SVG is a common example.</p>
+<p><strong>Resolution</strong> describes the number of pixels in a raster image and influences how much detail it contains.</p>
+<p><strong>Aspect ratio</strong> is the relationship between an image's width and height. Keeping the original aspect ratio when resizing prevents stretching or distortion.</p>
+<p>Therefore, resolution affects detail, while aspect ratio preserves correct proportions.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q34" data-section="B" data-number="34" data-search="compare rgb and cmyk colour spaces. which is suitable for web design? **rgb** stands for red, green and blue. it is an additive colour model that combines light to create colours. computer screens, smartphones and other digital displays use rgb.
+
+**cmyk** stands for cyan, magenta, yellow and key (black). it is a subtractive colour model that uses inks and is mainly associated with printing.
+
+rgb is more suitable for web design because webpages are viewed on digital screens that produce colour with light. cmyk is usually used when preparing printed materials such as brochures and posters.
+
+therefore, designers normally work with rgb colours for websites and cmyk for print production."><div class="qhead"><div class="qline"><span class="qnumber">Q34</span><span class="mark">4 marks</span><span class="source">L8/Sample</span></div><h2>Compare RGB and CMYK colour spaces. Which is suitable for web design?</h2></div><div class="answer"><p><strong>RGB</strong> stands for Red, Green and Blue. It is an additive colour model that combines light to create colours. Computer screens, smartphones and other digital displays use RGB.</p>
+<p><strong>CMYK</strong> stands for Cyan, Magenta, Yellow and Key (Black). It is a subtractive colour model that uses inks and is mainly associated with printing.</p>
+<p>RGB is more suitable for web design because webpages are viewed on digital screens that produce colour with light. CMYK is usually used when preparing printed materials such as brochures and posters.</p>
+<p>Therefore, designers normally work with RGB colours for websites and CMYK for print production.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q35" data-section="B" data-number="35" data-search="differentiate aliasing and anti-aliasing in digital images. **aliasing** is the jagged or stair-step appearance of diagonal lines and curved edges in raster graphics. it occurs because smooth shapes are represented by a limited grid of square pixels.
+
+**anti-aliasing** is a technique that reduces the appearance of these jagged edges by smoothing the transition between edge pixels and nearby colours.
+
+for example, small diagonal text may look rough without anti-aliasing but smoother with it applied.
+
+anti-aliasing improves the visual quality of text, shapes and digital images. however, the underlying image resolution still affects the amount of detail that can be shown."><div class="qhead"><div class="qline"><span class="qnumber">Q35</span><span class="mark">4 marks</span><span class="source">L8</span></div><h2>Differentiate aliasing and anti-aliasing in digital images.</h2></div><div class="answer"><p><strong>Aliasing</strong> is the jagged or stair-step appearance of diagonal lines and curved edges in raster graphics. It occurs because smooth shapes are represented by a limited grid of square pixels.</p>
+<p><strong>Anti-aliasing</strong> is a technique that reduces the appearance of these jagged edges by smoothing the transition between edge pixels and nearby colours.</p>
+<p>For example, small diagonal text may look rough without anti-aliasing but smoother with it applied.</p>
+<p>Anti-aliasing improves the visual quality of text, shapes and digital images. However, the underlying image resolution still affects the amount of detail that can be shown.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q36" data-section="B" data-number="36" data-search="define animation and explain persistence of vision and frame rate. **animation** creates the appearance of movement by displaying a series of slightly different images, called frames, in sequence.
+
+**persistence of vision** is the traditional explanation that an image remains in visual perception briefly after it disappears. in practice, the perception of smooth movement also depends on how the visual system processes changing images.
+
+**frame rate** is the number of frames shown each second and is measured in frames per second (fps). for example, 24 fps means 24 frames are displayed in one second.
+
+a suitable frame rate helps make movement appear smooth, while a very low frame rate can make animation look jerky."><div class="qhead"><div class="qline"><span class="qnumber">Q36</span><span class="mark">4 marks</span><span class="source">L9</span></div><h2>Define animation and explain persistence of vision and frame rate.</h2></div><div class="answer"><p><strong>Animation</strong> creates the appearance of movement by displaying a series of slightly different images, called frames, in sequence.</p>
+<p><strong>Persistence of vision</strong> is the traditional explanation that an image remains in visual perception briefly after it disappears. In practice, the perception of smooth movement also depends on how the visual system processes changing images.</p>
+<p><strong>Frame rate</strong> is the number of frames shown each second and is measured in frames per second (fps). For example, 24 fps means 24 frames are displayed in one second.</p>
+<p>A suitable frame rate helps make movement appear smooth, while a very low frame rate can make animation look jerky.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q37" data-section="B" data-number="37" data-search="explain keyframes, tweening and interpolation in animation. a **keyframe** marks an important state or position of an object at a particular point in an animation.
+
+**tweening** is the process of creating intermediate frames between keyframes so an object appears to move or change smoothly.
+
+**interpolation** is the mathematical method used to calculate values for those intermediate frames, such as an object&#x27;s position, rotation or size.
+
+for example, one keyframe may place a ball on the left side of the screen and another on the right. interpolation calculates positions between them, and the resulting frames create the animation.
+
+these techniques reduce the need to draw or position every frame manually."><div class="qhead"><div class="qline"><span class="qnumber">Q37</span><span class="mark">4 marks</span><span class="source">L9</span></div><h2>Explain keyframes, tweening and interpolation in animation.</h2></div><div class="answer"><p>A <strong>keyframe</strong> marks an important state or position of an object at a particular point in an animation.</p>
+<p><strong>Tweening</strong> is the process of creating intermediate frames between keyframes so an object appears to move or change smoothly.</p>
+<p><strong>Interpolation</strong> is the mathematical method used to calculate values for those intermediate frames, such as an object's position, rotation or size.</p>
+<p>For example, one keyframe may place a ball on the left side of the screen and another on the right. Interpolation calculates positions between them, and the resulting frames create the animation.</p>
+<p>These techniques reduce the need to draw or position every frame manually.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q38" data-section="B" data-number="38" data-search="differentiate 2d, 2.5d and 3d animation. **2d animation** uses two-dimensional drawings or graphics with width and height. examples include traditional cartoons and simple moving icons.
+
+**2.5d animation** uses 2d artwork arranged or manipulated to create an impression of depth, without building every object as a fully three-dimensional model.
+
+**3d animation** uses digital objects with width, height and depth. models can be viewed from different angles and animated in a three-dimensional scene.
+
+the main difference is how depth is represented. a flat cartoon is commonly 2d, moving layered images may create a 2.5d effect, and a fully modelled animated character is 3d."><div class="qhead"><div class="qline"><span class="qnumber">Q38</span><span class="mark">4 marks</span><span class="source">L9</span></div><h2>Differentiate 2D, 2.5D and 3D animation.</h2></div><div class="answer"><p><strong>2D animation</strong> uses two-dimensional drawings or graphics with width and height. Examples include traditional cartoons and simple moving icons.</p>
+<p><strong>2.5D animation</strong> uses 2D artwork arranged or manipulated to create an impression of depth, without building every object as a fully three-dimensional model.</p>
+<p><strong>3D animation</strong> uses digital objects with width, height and depth. Models can be viewed from different angles and animated in a three-dimensional scene.</p>
+<p>The main difference is how depth is represented. A flat cartoon is commonly 2D, moving layered images may create a 2.5D effect, and a fully modelled animated character is 3D.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q39" data-section="B" data-number="39" data-search="explain two benefits and two problems of animation on websites. animation can improve a website when it supports the content and does not distract users.
+
+one **benefit** is that animation attracts attention to important changes or actions. another benefit is that it can demonstrate processes that may be difficult to explain with text alone.
+
+however, excessive animation can **distract** visitors from important information. large or unnecessary animation files can also **slow loading** or affect performance, especially on mobile devices.
+
+for example, a short animation showing how to use a product may be helpful, whereas several continuously moving banners may make the webpage difficult to read.
+
+designers should use animation only when it adds clear value."><div class="qhead"><div class="qline"><span class="qnumber">Q39</span><span class="mark">4 marks</span><span class="source">L9</span></div><h2>Explain two benefits and two problems of animation on websites.</h2></div><div class="answer"><p>Animation can improve a website when it supports the content and does not distract users.</p>
+<p>One <strong>benefit</strong> is that animation attracts attention to important changes or actions. Another benefit is that it can demonstrate processes that may be difficult to explain with text alone.</p>
+<p>However, excessive animation can <strong>distract</strong> visitors from important information. Large or unnecessary animation files can also <strong>slow loading</strong> or affect performance, especially on mobile devices.</p>
+<p>For example, a short animation showing how to use a product may be helpful, whereas several continuously moving banners may make the webpage difficult to read.</p>
+<p>Designers should use animation only when it adds clear value.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q40" data-section="B" data-number="40" data-search="explain copyright and public-domain material in multimedia. **copyright** is a form of intellectual property protection that gives creators legal rights over original works, including photographs, music, videos and illustrations.
+
+material found online is not automatically free to copy or reuse. a developer usually needs permission, an appropriate licence or a relevant legal exception before using someone else&#x27;s copyrighted content.
+
+**public-domain material** is not protected by copyright, for example because its copyright has expired. it can generally be reused without seeking copyright permission, although other rights may still matter.
+
+for example, a designer should not assume that an online photograph is free to use simply because it is easy to download."><div class="qhead"><div class="qline"><span class="qnumber">Q40</span><span class="mark">4 marks</span><span class="source">L11</span></div><h2>Explain copyright and public-domain material in multimedia.</h2></div><div class="answer"><p><strong>Copyright</strong> is a form of intellectual property protection that gives creators legal rights over original works, including photographs, music, videos and illustrations.</p>
+<p>Material found online is not automatically free to copy or reuse. A developer usually needs permission, an appropriate licence or a relevant legal exception before using someone else's copyrighted content.</p>
+<p><strong>Public-domain material</strong> is not protected by copyright, for example because its copyright has expired. It can generally be reused without seeking copyright permission, although other rights may still matter.</p>
+<p>For example, a designer should not assume that an online photograph is free to use simply because it is easy to download.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q41" data-section="B" data-number="41" data-search="explain licences, fair use or fair dealing in multimedia projects. a **licence** is permission from a copyright holder to use their work under stated conditions. some licences permit reuse only with attribution, while others restrict modification or commercial purposes.
+
+**fair use** is a legal exception in some countries, particularly the united states, that may allow certain uses without permission after considering several factors.
+
+in **australia**, specific **fair dealing** exceptions apply for purposes such as research or study, criticism or review, and reporting news, subject to legal requirements. there is no general us-style fair use exception.
+
+a commercial website should not assume that copying online photos, music or videos is legal. it should normally use original, licensed or genuinely public-domain material."><div class="qhead"><div class="qline"><span class="qnumber">Q41</span><span class="mark">4 marks</span><span class="source">L11</span></div><h2>Explain licences, fair use or fair dealing in multimedia projects.</h2></div><div class="answer"><p>A <strong>licence</strong> is permission from a copyright holder to use their work under stated conditions. Some licences permit reuse only with attribution, while others restrict modification or commercial purposes.</p>
+<p><strong>Fair use</strong> is a legal exception in some countries, particularly the United States, that may allow certain uses without permission after considering several factors.</p>
+<p>In <strong>Australia</strong>, specific <strong>fair dealing</strong> exceptions apply for purposes such as research or study, criticism or review, and reporting news, subject to legal requirements. There is no general US-style fair use exception.</p>
+<p>A commercial website should not assume that copying online photos, music or videos is legal. It should normally use original, licensed or genuinely public-domain material.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q42" data-section="B" data-number="42" data-search="what is digital rights management (drm) and why is it important? **digital rights management (drm)** refers to technologies used to control access to and use of digital content. drm systems may restrict copying, downloading, printing or playback of protected media.
+
+drm is used to help copyright owners and distributors manage how digital works are accessed and shared. for example, an online video platform may limit playback to authorised users and devices.
+
+a multimedia designer should respect licensing and access restrictions rather than assume that a playable or downloadable file can be reused freely.
+
+drm does not replace copyright law, but it is one method of enforcing particular access and usage conditions."><div class="qhead"><div class="qline"><span class="qnumber">Q42</span><span class="mark">4 marks</span><span class="source">L11</span></div><h2>What is digital rights management (DRM) and why is it important?</h2></div><div class="answer"><p><strong>Digital Rights Management (DRM)</strong> refers to technologies used to control access to and use of digital content. DRM systems may restrict copying, downloading, printing or playback of protected media.</p>
+<p>DRM is used to help copyright owners and distributors manage how digital works are accessed and shared. For example, an online video platform may limit playback to authorised users and devices.</p>
+<p>A multimedia designer should respect licensing and access restrictions rather than assume that a playable or downloadable file can be reused freely.</p>
+<p>DRM does not replace copyright law, but it is one method of enforcing particular access and usage conditions.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q43" data-section="C" data-number="43" data-search="a community sports centre needs home, classes, trainers, gallery, timetable and contact pages. propose a site structure and explain accessibility and mobile design. a community sports centre website should be simple, organised and accessible so visitors can quickly find classes, trainers, schedules and contact information.
+
+**website organisation:** a hierarchical structure is suitable. the home page connects to classes, trainers, gallery, timetable and contact pages. a clear navigation menu should appear consistently on each page so visitors can reach important information easily.
+
+**page structure:** a typical page should use semantic html elements: `&lt;header&gt;` for the site name, `&lt;nav&gt;` for links, `&lt;main&gt;` for primary information, `&lt;section&gt;` for related content and `&lt;footer&gt;` for contact details or copyright information.
+
+**accessibility:** images should have meaningful alt text; headings should be organised logically; links should describe their destinations; and forms should have labels. good colour contrast and keyboard navigation also support different users.
+
+**mobile-friendly design:** responsive css should adapt the layout to phone, tablet and desktop screens. a multi-column layout may become a single column on a small screen. images should resize without distortion, and tables should remain readable.
+
+overall, a clear hierarchy, meaningful html, accessibility and responsive design will make the website easier for community members to use."><div class="qhead"><div class="qline"><span class="qnumber">Q43</span><span class="mark">8 marks</span><span class="source">Official sample case 1</span></div><h2>A community sports centre needs Home, Classes, Trainers, Gallery, Timetable and Contact pages. Propose a site structure and explain accessibility and mobile design.</h2></div><div class="answer"><p>A community sports centre website should be simple, organised and accessible so visitors can quickly find classes, trainers, schedules and contact information.</p>
+<p><strong>Website organisation:</strong> A hierarchical structure is suitable. The Home page connects to Classes, Trainers, Gallery, Timetable and Contact pages. A clear navigation menu should appear consistently on each page so visitors can reach important information easily.</p>
+<p><strong>Page structure:</strong> A typical page should use semantic HTML elements: <code>&lt;header&gt;</code> for the site name, <code>&lt;nav&gt;</code> for links, <code>&lt;main&gt;</code> for primary information, <code>&lt;section&gt;</code> for related content and <code>&lt;footer&gt;</code> for contact details or copyright information.</p>
+<p><strong>Accessibility:</strong> Images should have meaningful alt text; headings should be organised logically; links should describe their destinations; and forms should have labels. Good colour contrast and keyboard navigation also support different users.</p>
+<p><strong>Mobile-friendly design:</strong> Responsive CSS should adapt the layout to phone, tablet and desktop screens. A multi-column layout may become a single column on a small screen. Images should resize without distortion, and tables should remain readable.</p>
+<p>Overall, a clear hierarchy, meaningful HTML, accessibility and responsive design will make the website easier for community members to use.</p>
+</div><div class="example"><strong>Example</strong><p><strong>Suggested structure:</strong> Home → Classes / Trainers / Gallery / Timetable / Contact.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q44" data-section="C" data-number="44" data-search="a client wants online photographs, background music and a copied promotional clip. explain copyright, public domain, fair dealing and drm, then recommend lawful actions. a multimedia website must use images, music and video legally and ethically. content appearing on the internet is not automatically free to copy.
+
+**copyright:** original photographs, music and videos are normally protected by copyright. reproducing or publishing them without authorisation may infringe the owner&#x27;s rights, particularly on a commercial website.
+
+**fair use and fair dealing:** fair use is recognised in some countries, especially the united states. australia uses specific fair dealing exceptions rather than a general fair use rule. commercial promotional copying is not automatically permitted under these exceptions.
+
+**public domain:** works no longer protected by copyright may generally be reused, although the designer should check that the specific material is genuinely public domain.
+
+**drm:** digital rights management controls access or copying of digital materials. for example, video services may restrict downloading or redistribution. these restrictions should be respected.
+
+**recommended actions:** obtain permission from copyright holders, use original media, purchase properly licensed assets or choose suitably licensed creative commons/public-domain content. read licence conditions and give attribution where required. do not copy the promotional clip without an appropriate right to do so.
+
+following these steps reduces legal risk and respects creators&#x27; intellectual property."><div class="qhead"><div class="qline"><span class="qnumber">Q44</span><span class="mark">8 marks</span><span class="source">Official sample case 2</span></div><h2>A client wants online photographs, background music and a copied promotional clip. Explain copyright, public domain, fair dealing and DRM, then recommend lawful actions.</h2></div><div class="answer"><p>A multimedia website must use images, music and video legally and ethically. Content appearing on the Internet is not automatically free to copy.</p>
+<p><strong>Copyright:</strong> Original photographs, music and videos are normally protected by copyright. Reproducing or publishing them without authorisation may infringe the owner's rights, particularly on a commercial website.</p>
+<p><strong>Fair use and fair dealing:</strong> Fair use is recognised in some countries, especially the United States. Australia uses specific fair dealing exceptions rather than a general fair use rule. Commercial promotional copying is not automatically permitted under these exceptions.</p>
+<p><strong>Public domain:</strong> Works no longer protected by copyright may generally be reused, although the designer should check that the specific material is genuinely public domain.</p>
+<p><strong>DRM:</strong> Digital Rights Management controls access or copying of digital materials. For example, video services may restrict downloading or redistribution. These restrictions should be respected.</p>
+<p><strong>Recommended actions:</strong> Obtain permission from copyright holders, use original media, purchase properly licensed assets or choose suitably licensed Creative Commons/public-domain content. Read licence conditions and give attribution where required. Do not copy the promotional clip without an appropriate right to do so.</p>
+<p>Following these steps reduces legal risk and respects creators' intellectual property.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q45" data-section="C" data-number="45" data-search="a small business needs an organised website and readable web content. recommend navigation, writing style and visual design. a small business website should help visitors understand the business, find products or services and make contact without confusion.
+
+**organisation:** a hierarchical structure is suitable. the home page should link directly to products, services, about us and contact. products can be divided into categories if needed. avoid a hierarchy that is so deep that users need many clicks to reach information.
+
+**navigation:** keep the main menu consistent across pages and use meaningful link text such as “view products” rather than “click here”. make important information easy to locate.
+
+**writing for the web:** use short paragraphs, informative headings and bullet points so visitors can scan content. apply the inverted pyramid approach: put the most important information first, followed by supporting details.
+
+**visual design:** use the rcpa principles. repetition keeps fonts and colours consistent, contrast highlights important buttons, proximity groups related information, and alignment creates a clean layout.
+
+**accessibility and mobile design:** include descriptive image alt text, readable font sizes and sufficient contrast. a responsive layout should adjust to mobile screens.
+
+these choices make the business website clear, professional and easy to use."><div class="qhead"><div class="qline"><span class="qnumber">Q45</span><span class="mark">8 marks</span><span class="source">L5/L6 practice</span></div><h2>A small business needs an organised website and readable web content. Recommend navigation, writing style and visual design.</h2></div><div class="answer"><p>A small business website should help visitors understand the business, find products or services and make contact without confusion.</p>
+<p><strong>Organisation:</strong> A hierarchical structure is suitable. The Home page should link directly to Products, Services, About Us and Contact. Products can be divided into categories if needed. Avoid a hierarchy that is so deep that users need many clicks to reach information.</p>
+<p><strong>Navigation:</strong> Keep the main menu consistent across pages and use meaningful link text such as “View products” rather than “click here”. Make important information easy to locate.</p>
+<p><strong>Writing for the web:</strong> Use short paragraphs, informative headings and bullet points so visitors can scan content. Apply the inverted pyramid approach: put the most important information first, followed by supporting details.</p>
+<p><strong>Visual design:</strong> Use the RCPA principles. Repetition keeps fonts and colours consistent, contrast highlights important buttons, proximity groups related information, and alignment creates a clean layout.</p>
+<p><strong>Accessibility and mobile design:</strong> Include descriptive image alt text, readable font sizes and sufficient contrast. A responsive layout should adjust to mobile screens.</p>
+<p>These choices make the business website clear, professional and easy to use.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q46" data-section="C" data-number="46" data-search="a college needs an accessible online registration form. describe the html elements, validation and css needed. a college registration page must collect information clearly and allow different users to complete the form successfully.
+
+**html structure:** use `&lt;form&gt;` to group the fields. use `&lt;label&gt;` to describe each field and connect its `for` attribute to the input&#x27;s `id`. use `&lt;input&gt;` for names, email addresses and other short details, `&lt;select&gt;` for predefined options and `&lt;textarea&gt;` for longer comments. a `&lt;button type=&quot;submit&quot;&gt;` sends the form.
+
+**validation:** mark genuinely required fields and use suitable input types such as `type=&quot;email&quot;`. provide clear instructions and helpful error messages rather than relying only on colour.
+
+**accessibility:** every control needs an understandable label. users should be able to navigate with the keyboard, read all instructions and understand errors. use semantic elements and appropriate headings.
+
+**css:** provide enough space and padding for input controls, use readable fonts and strong colour contrast, and make controls large enough for touchscreens. a responsive layout should stack fields vertically on small screens.
+
+**privacy and security:** collect only necessary data, use https and handle submitted information securely on the server.
+
+a correctly structured, accessible form reduces mistakes and improves the student registration experience."><div class="qhead"><div class="qline"><span class="qnumber">Q46</span><span class="mark">8 marks</span><span class="source">L6 practice</span></div><h2>A college needs an accessible online registration form. Describe the HTML elements, validation and CSS needed.</h2></div><div class="answer"><p>A college registration page must collect information clearly and allow different users to complete the form successfully.</p>
+<p><strong>HTML structure:</strong> Use <code>&lt;form&gt;</code> to group the fields. Use <code>&lt;label&gt;</code> to describe each field and connect its <code>for</code> attribute to the input's <code>id</code>. Use <code>&lt;input&gt;</code> for names, email addresses and other short details, <code>&lt;select&gt;</code> for predefined options and <code>&lt;textarea&gt;</code> for longer comments. A <code>&lt;button type=&quot;submit&quot;&gt;</code> sends the form.</p>
+<p><strong>Validation:</strong> Mark genuinely required fields and use suitable input types such as <code>type=&quot;email&quot;</code>. Provide clear instructions and helpful error messages rather than relying only on colour.</p>
+<p><strong>Accessibility:</strong> Every control needs an understandable label. Users should be able to navigate with the keyboard, read all instructions and understand errors. Use semantic elements and appropriate headings.</p>
+<p><strong>CSS:</strong> Provide enough space and padding for input controls, use readable fonts and strong colour contrast, and make controls large enough for touchscreens. A responsive layout should stack fields vertically on small screens.</p>
+<p><strong>Privacy and security:</strong> Collect only necessary data, use HTTPS and handle submitted information securely on the server.</p>
+<p>A correctly structured, accessible form reduces mistakes and improves the student registration experience.</p>
+</div><div class="snippet-title">HTML / CSS example</div><pre class="code"><code>&lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+&lt;input id=&quot;email&quot; type=&quot;email&quot; required&gt;
+&lt;label for=&quot;course&quot;&gt;Course&lt;/label&gt;
+&lt;select id=&quot;course&quot;&gt;&lt;option&gt;Networking&lt;/option&gt;&lt;/select&gt;
+&lt;button type=&quot;submit&quot;&gt;Register&lt;/button&gt;</code></pre><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q47" data-section="C" data-number="47" data-search="a company needs a logo, photograph, animated icon and transparent graphic. choose file formats and explain resizing. a multimedia designer should choose image formats according to the type of content and how it will be displayed.
+
+**logo:** svg is an appropriate format because it is vector-based. it can be displayed at different sizes without losing sharpness and is useful for icons and brand logos.
+
+**photograph:** jpeg is suitable for a detailed digital photograph because it supports many colours and uses lossy compression to reduce file size. the designer should choose a suitable compression level to balance clarity and loading speed.
+
+**animated icon:** gif is suitable for a simple animated icon because it supports frame-based animation, although it has a limited colour palette. modern alternatives can be considered depending on browser support and project needs.
+
+**transparent graphic:** png is useful for images requiring transparency and sharp raster detail. it uses lossless compression and suits interface graphics or screenshots.
+
+**resizing:** raster images such as jpeg and png contain pixels. enlarging them beyond their original size may cause blur or pixelation. vector images such as svg remain sharp when enlarged because they use mathematical shapes. the designer should maintain the original aspect ratio to prevent distortion.
+
+using suitable formats, resolution and proportions produces good image quality while keeping file sizes manageable."><div class="qhead"><div class="qline"><span class="qnumber">Q47</span><span class="mark">8 marks</span><span class="source">L3/L8 practice</span></div><h2>A company needs a logo, photograph, animated icon and transparent graphic. Choose file formats and explain resizing.</h2></div><div class="answer"><p>A multimedia designer should choose image formats according to the type of content and how it will be displayed.</p>
+<p><strong>Logo:</strong> SVG is an appropriate format because it is vector-based. It can be displayed at different sizes without losing sharpness and is useful for icons and brand logos.</p>
+<p><strong>Photograph:</strong> JPEG is suitable for a detailed digital photograph because it supports many colours and uses lossy compression to reduce file size. The designer should choose a suitable compression level to balance clarity and loading speed.</p>
+<p><strong>Animated icon:</strong> GIF is suitable for a simple animated icon because it supports frame-based animation, although it has a limited colour palette. Modern alternatives can be considered depending on browser support and project needs.</p>
+<p><strong>Transparent graphic:</strong> PNG is useful for images requiring transparency and sharp raster detail. It uses lossless compression and suits interface graphics or screenshots.</p>
+<p><strong>Resizing:</strong> Raster images such as JPEG and PNG contain pixels. Enlarging them beyond their original size may cause blur or pixelation. Vector images such as SVG remain sharp when enlarged because they use mathematical shapes. The designer should maintain the original aspect ratio to prevent distortion.</p>
+<p>Using suitable formats, resolution and proportions produces good image quality while keeping file sizes manageable.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q48" data-section="C" data-number="48" data-search="a college plans a short promotional animation. explain target audience, previsualization, production stages and usability. a successful promotional animation should be planned for a clearly identified target audience before production begins.
+
+**target audience:** the college should determine who will watch the animation, such as prospective students and parents, and identify what information matters to them. this influences language, pacing, visuals and the message.
+
+**analysis:** define the project&#x27;s purpose, user requirements and key information, such as courses, facilities and support services.
+
+**design and previsualization:** prepare a treatment describing the idea, a script with narration and dialogue, and a storyboard showing the planned sequence of scenes. these tools allow the team to review the concept before animation work begins.
+
+**implementation:** create graphics, prepare keyframes and use tweening or interpolation to produce movement between important positions. add narration, sound and suitable text, then test the animation with intended viewers.
+
+**deployment:** publish the final animation in a suitable format and ensure that it can be viewed on common devices.
+
+**accessibility and usability:** provide captions or a text alternative where appropriate. avoid excessive movement, overly fast scene changes and large files that slow the webpage.
+
+feedback should be used to improve the final multimedia product."><div class="qhead"><div class="qline"><span class="qnumber">Q48</span><span class="mark">8 marks</span><span class="source">L7/L9 practice</span></div><h2>A college plans a short promotional animation. Explain target audience, previsualization, production stages and usability.</h2></div><div class="answer"><p>A successful promotional animation should be planned for a clearly identified target audience before production begins.</p>
+<p><strong>Target audience:</strong> The college should determine who will watch the animation, such as prospective students and parents, and identify what information matters to them. This influences language, pacing, visuals and the message.</p>
+<p><strong>Analysis:</strong> Define the project's purpose, user requirements and key information, such as courses, facilities and support services.</p>
+<p><strong>Design and previsualization:</strong> Prepare a treatment describing the idea, a script with narration and dialogue, and a storyboard showing the planned sequence of scenes. These tools allow the team to review the concept before animation work begins.</p>
+<p><strong>Implementation:</strong> Create graphics, prepare keyframes and use tweening or interpolation to produce movement between important positions. Add narration, sound and suitable text, then test the animation with intended viewers.</p>
+<p><strong>Deployment:</strong> Publish the final animation in a suitable format and ensure that it can be viewed on common devices.</p>
+<p><strong>Accessibility and usability:</strong> Provide captions or a text alternative where appropriate. Avoid excessive movement, overly fast scene changes and large files that slow the webpage.</p>
+<p>Feedback should be used to improve the final multimedia product.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q49" data-section="C" data-number="49" data-search="a college it information website must explain networking and security. describe http, dns and the cia triad using practical examples. a college it website should explain how users reach web services and how information is protected.
+
+**dns:** the domain name system translates readable domain names into ip addresses. when a student enters the college website address, dns helps the browser locate the correct server.
+
+**http and https:** http is used for requests and responses between a browser and a web server. https is the secure version that encrypts data in transit. a student portal that handles passwords or personal data should use https.
+
+**confidentiality:** private information should be accessible only to authorised users. examples include login authentication, correct access permissions and encryption.
+
+**integrity:** information must remain accurate and protected from unauthorised modification. for example, marks and assessment results should be changed only by authorised staff; audit trails and access controls can help.
+
+**availability:** authorised students should be able to reach the portal when needed. reliable hosting, backups, maintenance and appropriate recovery arrangements support availability.
+
+**practical design:** the website should explain these concepts in short paragraphs with meaningful headings and examples, making technical information easier for students to understand.
+
+together, dns and https support web access, while the cia principles describe core goals for protecting college information."><div class="qhead"><div class="qline"><span class="qnumber">Q49</span><span class="mark">8 marks</span><span class="source">L1 security/networking practice</span></div><h2>A college IT information website must explain networking and security. Describe HTTP, DNS and the CIA triad using practical examples.</h2></div><div class="answer"><p>A college IT website should explain how users reach web services and how information is protected.</p>
+<p><strong>DNS:</strong> The Domain Name System translates readable domain names into IP addresses. When a student enters the college website address, DNS helps the browser locate the correct server.</p>
+<p><strong>HTTP and HTTPS:</strong> HTTP is used for requests and responses between a browser and a web server. HTTPS is the secure version that encrypts data in transit. A student portal that handles passwords or personal data should use HTTPS.</p>
+<p><strong>Confidentiality:</strong> Private information should be accessible only to authorised users. Examples include login authentication, correct access permissions and encryption.</p>
+<p><strong>Integrity:</strong> Information must remain accurate and protected from unauthorised modification. For example, marks and assessment results should be changed only by authorised staff; audit trails and access controls can help.</p>
+<p><strong>Availability:</strong> Authorised students should be able to reach the portal when needed. Reliable hosting, backups, maintenance and appropriate recovery arrangements support availability.</p>
+<p><strong>Practical design:</strong> The website should explain these concepts in short paragraphs with meaningful headings and examples, making technical information easier for students to understand.</p>
+<p>Together, DNS and HTTPS support web access, while the CIA principles describe core goals for protecting college information.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article>
+<article class="question-card" id="q50" data-section="C" data-number="50" data-search="design a mobile-friendly community service website with navigation, forms, tables and accessible content. a community service organisation needs a website that is easy to navigate, readable on mobile devices and accessible to different visitors.
+
+**website structure:** use a hierarchical structure with a home page linking to services, schedule, about us and contact. keep navigation consistent and provide descriptive link text.
+
+**semantic html:** use `&lt;header&gt;` for the title, `&lt;nav&gt;` for the menu, `&lt;main&gt;` for primary content, `&lt;section&gt;` for related service details and `&lt;footer&gt;` for contact information.
+
+**contact form:** use `&lt;form&gt;`, linked `&lt;label&gt;` and `&lt;input&gt;` elements for contact details, a `&lt;textarea&gt;` for a message and a submit `&lt;button&gt;`. make instructions clear and show understandable validation messages.
+
+**tables:** a timetable can use `&lt;table&gt;`, `&lt;tr&gt;`, `&lt;th&gt;` and `&lt;td&gt;`. css `border-collapse: collapse;` creates neat borders, while `padding` adds readable spacing. zebra rows can help users follow data across a table.
+
+**responsive design:** use flexbox or flexible layouts and css media queries to reorganise content for smaller screens. wide tables can use a scrollable wrapper.
+
+**accessibility:** include alternative text for meaningful images, readable fonts, sufficient colour contrast, keyboard-friendly navigation and semantic html.
+
+by combining organisation, accessibility and responsive css, the website can serve visitors effectively on desktop and mobile devices."><div class="qhead"><div class="qline"><span class="qnumber">Q50</span><span class="mark">8 marks</span><span class="source">L2/L5/L6 practice</span></div><h2>Design a mobile-friendly community service website with navigation, forms, tables and accessible content.</h2></div><div class="answer"><p>A community service organisation needs a website that is easy to navigate, readable on mobile devices and accessible to different visitors.</p>
+<p><strong>Website structure:</strong> Use a hierarchical structure with a Home page linking to Services, Schedule, About Us and Contact. Keep navigation consistent and provide descriptive link text.</p>
+<p><strong>Semantic HTML:</strong> Use <code>&lt;header&gt;</code> for the title, <code>&lt;nav&gt;</code> for the menu, <code>&lt;main&gt;</code> for primary content, <code>&lt;section&gt;</code> for related service details and <code>&lt;footer&gt;</code> for contact information.</p>
+<p><strong>Contact form:</strong> Use <code>&lt;form&gt;</code>, linked <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> elements for contact details, a <code>&lt;textarea&gt;</code> for a message and a submit <code>&lt;button&gt;</code>. Make instructions clear and show understandable validation messages.</p>
+<p><strong>Tables:</strong> A timetable can use <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code>. CSS <code>border-collapse: collapse;</code> creates neat borders, while <code>padding</code> adds readable spacing. Zebra rows can help users follow data across a table.</p>
+<p><strong>Responsive design:</strong> Use Flexbox or flexible layouts and CSS media queries to reorganise content for smaller screens. Wide tables can use a scrollable wrapper.</p>
+<p><strong>Accessibility:</strong> Include alternative text for meaningful images, readable fonts, sufficient colour contrast, keyboard-friendly navigation and semantic HTML.</p>
+<p>By combining organisation, accessibility and responsive CSS, the website can serve visitors effectively on desktop and mobile devices.</p>
+</div><div class="qbottom"><span>Lecture-based practice</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div></article></div>
+      <div class="empty hidden" id="empty-all">No matching questions. Try a different keyword.</div>
+    </section>
+    <section id="top-view" class="hidden" aria-label="Ten priority five-mark questions">
+      <div class="highlight-note"><strong>How these 10 were chosen:</strong> All ten topics appear in the provided MIT sample exam. The first four are official sample five-mark questions; the other six are sample four-mark topics expanded here into five-mark revision answers. <strong>They are study priorities, not guaranteed exam predictions.</strong></div>
+      <div class="reading-tip"><b>Revision approach:</b> Read each answer, cover it, then try explaining it in your own words. Revisit any answer you cannot reproduce clearly.</div>
+      <div class="filterbar"><span class="filter-label">10 PRIORITIES</span><span class="result-count" id="result-top">Showing 10 questions</span></div>
+      <div class="questions" id="questions-top"><article class="question-card focus-card" id="p1"><div class="qhead"><div class="qline"><span class="qnumber">TOP 01</span><span class="mark">5-mark practice</span><span class="source">Direct sample question</span></div><h2>Differentiate the Internet and the World Wide Web.</h2></div><div class="answer"><p>The <strong>Internet</strong> is a worldwide network of interconnected computers and devices that enables communication and the sharing of information. It provides the network infrastructure used by many services.</p>
+<p>The <strong>World Wide Web (WWW)</strong> is a collection of linked webpages and websites stored on web servers. Users access these pages through browsers such as Chrome using web technologies including HTTP or HTTPS.</p>
+<p>The main difference is that the Internet is the underlying network, while the World Wide Web is one service that operates over that network. The Internet also supports services such as email and file transfer.</p>
+<p>Therefore, the Web is part of the Internet, but they are not the same thing.</p>
+</div><div class="qbottom"><span>Directly asked in the official sample exam.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p2"><div class="qhead"><div class="qline"><span class="qnumber">TOP 02</span><span class="mark">5-mark practice</span><span class="source">Direct sample question</span></div><h2>Explain the purpose of two HTML5 semantic elements.</h2></div><div class="answer"><p><strong>HTML5 semantic elements</strong> describe the meaning and structure of webpage content. They help developers organise webpages and assist browsers and accessibility tools in understanding page sections.</p>
+<p>The <strong><code>&lt;nav&gt;</code> element</strong> defines an area of navigation links, usually containing items such as Home, Courses and Contact. It helps visitors find different parts of a website.</p>
+<p>The <strong><code>&lt;footer&gt;</code> element</strong> defines a footer for a page or section. It commonly contains copyright information, contact details and useful links.</p>
+<p>Using semantic elements instead of only generic div containers makes webpage structure clearer and easier to maintain. For example, a college website can use <code>&lt;nav&gt;</code> for its main menu and <code>&lt;footer&gt;</code> for contact information.</p>
+</div><div class="qbottom"><span>Directly asked in the official sample exam.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p3"><div class="qhead"><div class="qline"><span class="qnumber">TOP 03</span><span class="mark">5-mark practice</span><span class="source">Direct sample question</span></div><h2>Choose image formats for an animated icon and a digital photograph.</h2></div><div class="answer"><p>Different image formats are appropriate for different purposes because they vary in animation support, image quality and compression.</p>
+<p>An <strong>animated icon</strong> can use <strong>GIF (Graphics Interchange Format)</strong>. GIF supports frame-based animation and simple graphics with a limited colour palette. It is appropriate for small animations, although other modern formats may also be used.</p>
+<p>A <strong>digital photograph</strong> can use <strong>JPEG (Joint Photographic Experts Group)</strong>. JPEG supports images with many colours and uses lossy compression to reduce file size while preserving acceptable visual quality.</p>
+<p>Therefore, GIF is suitable for simple animated graphics, while JPEG is normally more suitable for detailed photographs displayed on websites.</p>
+</div><div class="qbottom"><span>Directly asked in the official sample exam.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p4"><div class="qhead"><div class="qline"><span class="qnumber">TOP 04</span><span class="mark">5-mark practice</span><span class="source">Direct sample question</span></div><h2>Differentiate inline, embedded and external CSS; recommend one for a multi-page site.</h2></div><div class="answer"><p><strong>CSS (Cascading Style Sheets)</strong> controls webpage appearance, such as colours, typography and layout. It can be added to HTML in three main ways.</p>
+<p><strong>Inline CSS</strong> is written in an individual element's <code>style</code> attribute and affects that element. <strong>Embedded CSS</strong> is placed inside a <code>&lt;style&gt;</code> element in the HTML document's <code>&lt;head&gt;</code> and applies to that page. <strong>External CSS</strong> is stored in a separate <code>.css</code> file and linked from HTML pages.</p>
+<p><strong>External CSS</strong> is most appropriate for a multi-page website because several pages can share the same stylesheet. This keeps the design consistent and makes maintenance easier. Changing one external CSS file can update all linked pages without editing them separately.</p>
+</div><div class="qbottom"><span>Directly asked in the official sample exam.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p5"><div class="qhead"><div class="qline"><span class="qnumber">TOP 05</span><span class="mark">5-mark practice</span><span class="source">Adapted from sample topic</span></div><h2>Compare hierarchical, linear and random website organisation.</h2></div><div class="answer"><p>Website organisation describes how pages are connected and how visitors move between them.</p>
+<p>A <strong>hierarchical structure</strong> uses a tree-like arrangement, with the Home page leading to categories such as Products, About and Contact. A <strong>linear structure</strong> connects pages in a fixed order and is suitable for step-by-step lessons or tutorials. A <strong>random structure</strong> allows many links between pages without a strict sequence and supports free exploration, although navigation can be less predictable.</p>
+<p>A <strong>hierarchical structure</strong> is normally most suitable for a small business website because it groups information logically and makes products, services and contact details easier to find. The hierarchy should not contain unnecessary levels.</p>
+</div><div class="qbottom"><span>One of the official sample’s 4-mark topics, expanded for 5-mark revision.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p6"><div class="qhead"><div class="qline"><span class="qnumber">TOP 06</span><span class="mark">5-mark practice</span><span class="source">Adapted from sample topic</span></div><h2>Explain the inverted pyramid writing style and its benefits.</h2></div><div class="answer"><p>The <strong>inverted pyramid</strong> is a writing technique in which the most important information appears at the beginning of the content. Supporting facts come next, followed by less important background details.</p>
+<p>This approach is useful for websites because many online readers scan pages rather than read every word. One benefit is <strong>faster scanning</strong>: visitors can identify the main message immediately. Another benefit is <strong>better readability</strong>: readers can stop early after obtaining essential information.</p>
+<p>For example, a college announcement should begin with the exam date and location, followed by instructions and background details.</p>
+<p>The inverted pyramid improves communication by helping readers find important information quickly, particularly on mobile devices.</p>
+</div><div class="qbottom"><span>One of the official sample’s 4-mark topics, expanded for 5-mark revision.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p7"><div class="qhead"><div class="qline"><span class="qnumber">TOP 07</span><span class="mark">5-mark practice</span><span class="source">Adapted from sample topic</span></div><h2>Explain label, input, textarea and button in a contact form.</h2></div><div class="answer"><p>An HTML contact form allows visitors to submit information to a website.</p>
+<p>The <strong><code>&lt;label&gt;</code></strong> element explains the purpose of a field, such as Email Address. The <strong><code>&lt;input&gt;</code></strong> element collects short information, such as a name or email. The <strong><code>&lt;textarea&gt;</code></strong> element provides a larger box for longer comments. The <strong><code>&lt;button&gt;</code></strong> element performs an action, commonly submitting the form.</p>
+<p>For usability, the label should be linked to its field using matching <code>for</code> and <code>id</code> values. CSS should provide readable text, adequate spacing, padding and clear visual focus.</p>
+<p>Together, these elements and practices create a contact form that is organised, accessible and easier for users to complete.</p>
+</div><div class="qbottom"><span>One of the official sample’s 4-mark topics, expanded for 5-mark revision.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p8"><div class="qhead"><div class="qline"><span class="qnumber">TOP 08</span><span class="mark">5-mark practice</span><span class="source">Adapted from sample topic</span></div><h2>Explain zebra rows, hover effects and responsive table design.</h2></div><div class="answer"><p>Zebra rows, hover effects and responsive design are CSS techniques that help users read and interact with information.</p>
+<p><strong>Zebra rows</strong> use alternating background colours for table rows. They make it easier to track information across a table. <strong>Hover effects</strong> highlight a row or element when the pointer moves over it, helping users identify the data they are viewing.</p>
+<p><strong>Responsive design</strong> adapts tables and layouts to different screen sizes. For example, a multi-column layout can stack vertically on mobile devices, while a wide table may be placed inside a horizontally scrollable container.</p>
+<p>These techniques improve readability, visual feedback and usability across computers, tablets and phones.</p>
+</div><div class="qbottom"><span>One of the official sample’s 4-mark topics, expanded for 5-mark revision.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p9"><div class="qhead"><div class="qline"><span class="qnumber">TOP 09</span><span class="mark">5-mark practice</span><span class="source">Adapted from sample topic</span></div><h2>Compare raster and vector graphics, resolution and aspect ratio.</h2></div><div class="answer"><p><strong>Raster graphics</strong> consist of individual pixels and are commonly used for photographs. JPEG and PNG are raster formats. Raster images may become blurry or pixelated when enlarged too much.</p>
+<p><strong>Vector graphics</strong> use mathematical paths and shapes, so they can be resized without losing sharpness. SVG is a common vector format used for logos and icons.</p>
+<p><strong>Resolution</strong> describes the amount of pixel detail in a raster image. Enlarging a low-resolution image can reduce its apparent quality.</p>
+<p><strong>Aspect ratio</strong> is the relationship between an image's width and height. Preserving the original aspect ratio prevents stretching or distortion.</p>
+<p>Therefore, image type, resolution and aspect ratio must be considered when preparing graphics for web use.</p>
+</div><div class="qbottom"><span>One of the official sample’s 4-mark topics, expanded for 5-mark revision.</span><a href="#top">Back to top ↑</a></div></article>
+<article class="question-card focus-card" id="p10"><div class="qhead"><div class="qline"><span class="qnumber">TOP 10</span><span class="mark">5-mark practice</span><span class="source">Adapted from sample topic</span></div><h2>Compare RGB and CMYK. Which is best for websites?</h2></div><div class="answer"><p><strong>RGB</strong> means Red, Green and Blue. It is an additive colour model in which coloured light is combined to produce other colours. Digital displays such as computer monitors and smartphones use RGB.</p>
+<p><strong>CMYK</strong> means Cyan, Magenta, Yellow and Key (Black). It is a subtractive colour model used mainly for printing with ink. It is suitable for printed materials such as brochures and magazines.</p>
+<p><strong>RGB is more appropriate for website design</strong> because webpages are displayed on screens that produce colours using light rather than printing ink. Designers may use CMYK when preparing physical printed versions of their designs.</p>
+<p>Therefore, RGB is generally used for digital multimedia, while CMYK is associated with print production.</p>
+</div><div class="qbottom"><span>One of the official sample’s 4-mark topics, expanded for 5-mark revision.</span><a href="#top">Back to top ↑</a></div></article></div>
+      <div class="empty hidden" id="empty-top">No matching priority questions. Try a different keyword.</div>
+    </section>
+    <footer class="footer">BN109 Web and Multimedia Systems · Independent revision material prepared from supplied lectures and the 2026 sample exam. Not an official exam paper, marking guide or prediction. Specific copyright exceptions depend on applicable law.<br>All content is included in this single HTML page, so it can be saved and read offline.</footer>
+   </main>
+ </div>
+</div>
+<script>
+(()=>{
+'use strict';
+const $=(s,root=document)=>root.querySelector(s),$$=(s,root=document)=>Array.from(root.querySelectorAll(s));
+let mode='all',filter='all',search='';
+const side=$('#sidebar'),overlay=$('#overlay'),toggle=$('#menu-toggle');
+const setMenu=open=>{side.classList.toggle('open',open);overlay.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':''};
+toggle.addEventListener('click',()=>setMenu(!side.classList.contains('open')));
+overlay.addEventListener('click',()=>setMenu(false));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false);if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('#search').focus()}});
+const cards={all:$$('#questions-all .question-card'),top:$$('#questions-top .question-card')};
+const apply=()=>{const active=cards[mode];let shown=0;active.forEach(c=>{let ok=(!search||c.textContent.toLowerCase().includes(search))&&(mode==='top'||filter==='all'||c.dataset.section===filter);c.classList.toggle('hidden',!ok);if(ok)shown++});$('#result-'+mode).textContent=`Showing ${shown} of ${active.length} questions`;$('#empty-'+mode).classList.toggle('hidden',shown!==0);$$('.nav-q',mode==='top'?$('#side-top'):$('#side-all')).forEach(a=>{let target=document.querySelector(a.getAttribute('href'));a.classList.toggle('hidden',!target||target.classList.contains('hidden'))});$('#side-count').textContent=shown+' shown'};
+const changeMode=next=>{mode=next;$('#all-view').classList.toggle('hidden',mode!=='all');$('#top-view').classList.toggle('hidden',mode!=='top');$('#side-all').classList.toggle('hidden',mode!=='all');$('#side-top').classList.toggle('hidden',mode!=='top');$('#side-mode').textContent=mode==='all'?'All questions':'Priority topics';$$('.tab').forEach(b=>{let active=b.id==='tab-'+mode;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active))});apply();window.scrollTo({top:0,behavior:'instant'});};
+$('#tab-all').addEventListener('click',()=>changeMode('all'));$('#tab-top').addEventListener('click',()=>changeMode('top'));
+$$('.chip').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;$$('.chip').forEach(x=>x.classList.toggle('active',x===b));apply()}));
+$('#search').addEventListener('input',e=>{search=e.target.value.toLowerCase().trim();apply()});
+$('#print').addEventListener('click',()=>window.print());
+$$('.nav-q').forEach(a=>a.addEventListener('click',()=>{setMenu(false);$$('.nav-q.active').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
+const hash=window.location.hash; if(/^#p\d+$/.test(hash)){changeMode('top')}else if(/^#q\d+$/.test(hash)){changeMode('all')}else apply();
+})();
+</script>
+</body></html>
